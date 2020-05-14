@@ -1,0 +1,4962 @@
+{
+  "InfoGeneric": [
+    {
+      "titre": "Traffic counting PR 44+400 (Calcul) (TC_44_400)",
+      "DATEINFO": {
+        "value": "2019-04-16T18:46:35+02:00",
+        "type": "date"
+      },
+      "SOURCE": {
+        "value": "mivisu",
+        "type": "string"
+      },
+      "CONTEXTE": {
+        "value": "CXTMVS_MES_STA",
+        "type": "string"
+      },
+      "DESCRIPTION": null,
+      "TYPE ": {
+        "value": "MVS_EQT_MES",
+        "type": "string"
+      },
+      "SSTYPE": {
+        "value": "TrafficCountingStation",
+        "type": "string"
+      },
+      "ID": {
+        "value": "TC_44_400",
+        "type": "string"
+      },
+      "TITRE": {
+        "value": "Traffic counting 44+400 Km (TC_44_400)",
+        "type": "string"
+      },
+      "DATEUPDATE": {
+        "value": "2019-08-28T10:50:07+02:00",
+        "type": "date"
+      },
+      "DATEFIN": {
+        "value": null,
+        "type": "date"
+      },
+      "cfg": {
+        "type": "CPT",
+        "idInterne": "TC_44_400",
+        "profil": "TrafficCountingStation",
+        "sousType": "SIREDO_NF99340",
+        "eqtActif": "1\\\\Actif",
+        "description": "Traffic counting 44+400 Km",
+        "mesures": {
+          "pool": [
+            {
+              "value": "_1",
+              "_text": "Direction_1_WE",
+              "channels": [
+                {
+                  "value": "_0",
+                  "_text": "Slow Lane",
+                  "natures": [
+                    {
+                      "value": "QT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/QT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/QT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 6 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_3600",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/QT/3600/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 hr"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_86400",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/QT/86400/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 jr"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/TT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/TT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "VT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/VT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/VT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "BCL",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/BCL/360/0000"
+                            },
+                            "type": {
+                              "_text": "0BCLIA_B0"
+                            },
+                            "libelle": {
+                              "_text": "Sensor default"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "value": "_1",
+                  "_text": "Fast Lane",
+                  "natures": [
+                    {
+                      "value": "QT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/QT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/QT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 6 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_3600",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/QT/3600/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 hr"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_86400",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/QT/86400/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 jr"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/TT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/TT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "VT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/VT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/VT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "BCL",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/BCL/360/0000"
+                            },
+                            "type": {
+                              "_text": "0BCLIA_B0"
+                            },
+                            "libelle": {
+                              "_text": "Sensor default"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "value": "_2",
+              "_text": "Direction_2_EW",
+              "channels": [
+                {
+                  "value": "_2",
+                  "_text": "Fast Lane",
+                  "natures": [
+                    {
+                      "value": "QT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/QT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/QT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 6 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_3600",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/QT/3600/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 hr"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_86400",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/QT/86400/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 jr"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/TT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/TT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "VT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/VT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/VT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "BCL",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/BCL/360/0000"
+                            },
+                            "type": {
+                              "_text": "0BCLIA_B0"
+                            },
+                            "libelle": {
+                              "_text": "Sensor default"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "value": "_3",
+                  "_text": "Slow Lane",
+                  "natures": [
+                    {
+                      "value": "QT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/QT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/QT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 6 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_3600",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/QT/3600/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 hr"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_86400",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/QT/86400/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 jr"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/TT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/TT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "VT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/VT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/VT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "BCL",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/BCL/360/0000"
+                            },
+                            "type": {
+                              "_text": "0BCLIA_B0"
+                            },
+                            "libelle": {
+                              "_text": "Sensor default"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "titre": "Traffic counting PR 50+600 (Calcul) (TC_50_600)",
+      "DATEINFO": {
+        "value": "2019-04-16T18:46:35+02:00",
+        "type": "date"
+      },
+      "SOURCE": {
+        "value": "mivisu",
+        "type": "string"
+      },
+      "CONTEXTE": {
+        "value": "CXTMVS_MES_STA",
+        "type": "string"
+      },
+      "DESCRIPTION": null,
+      "TYPE ": {
+        "value": "MVS_EQT_MES",
+        "type": "string"
+      },
+      "SSTYPE": {
+        "value": "TrafficCountingStation",
+        "type": "string"
+      },
+      "ID": {
+        "value": "TC_50_600",
+        "type": "string"
+      },
+      "TITRE": {
+        "value": "Traffic counting 50+600 Km (TC_50_600)",
+        "type": "string"
+      },
+      "DATEUPDATE": {
+        "value": "2019-08-28T10:50:07+02:00",
+        "type": "date"
+      },
+      "DATEFIN": {
+        "value": null,
+        "type": "date"
+      },
+      "cfg": {
+        "type": "CPT",
+        "idInterne": "TC_50_600",
+        "profil": "TrafficCountingStation",
+        "sousType": "SIREDO_NF99340",
+        "eqtActif": "1\\\\Actif",
+        "description": "Traffic counting 50+600 Km",
+        "mesures": {
+          "pool": [
+            {
+              "value": "_1",
+              "_text": "Direction_1_WE",
+              "channels": [
+                {
+                  "value": "_0",
+                  "_text": "Slow Lane",
+                  "natures": [
+                    {
+                      "value": "QT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/QT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/QT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 6 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_3600",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/QT/3600/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 hr"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_86400",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/QT/86400/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 jr"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/TT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/TT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "VT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/VT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/VT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "BCL",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/BCL/360/0000"
+                            },
+                            "type": {
+                              "_text": "0BCLIA_B0"
+                            },
+                            "libelle": {
+                              "_text": "Sensor default"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "value": "_1",
+                  "_text": "Fast Lane",
+                  "natures": [
+                    {
+                      "value": "QT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/QT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/QT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 6 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_3600",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/QT/3600/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 hr"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_86400",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/QT/86400/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 jr"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/TT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/TT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "VT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/VT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/VT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "BCL",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/BCL/360/0000"
+                            },
+                            "type": {
+                              "_text": "0BCLIA_B0"
+                            },
+                            "libelle": {
+                              "_text": "Sensor default"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "value": "_2",
+              "_text": "Direction_2_EW",
+              "channels": [
+                {
+                  "value": "_2",
+                  "_text": "Fast Lane",
+                  "natures": [
+                    {
+                      "value": "QT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/QT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/QT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 6 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_3600",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/QT/3600/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 hr"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_86400",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/QT/86400/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 jr"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/TT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/TT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "VT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/VT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/VT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "BCL",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/BCL/360/0000"
+                            },
+                            "type": {
+                              "_text": "0BCLIA_B0"
+                            },
+                            "libelle": {
+                              "_text": "Sensor default"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "value": "_3",
+                  "_text": "Slow Lane",
+                  "natures": [
+                    {
+                      "value": "QT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/QT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/QT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 6 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_3600",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/QT/3600/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 hr"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_86400",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/QT/86400/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 jr"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/TT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/TT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "VT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/VT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/VT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "BCL",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/BCL/360/0000"
+                            },
+                            "type": {
+                              "_text": "0BCLIA_B0"
+                            },
+                            "libelle": {
+                              "_text": "Sensor default"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "titre": "Traffic counting PR 61+880 (Calcul) (TC_61_880)",
+      "DATEINFO": {
+        "value": "2019-04-16T18:46:35+02:00",
+        "type": "date"
+      },
+      "SOURCE": {
+        "value": "mivisu",
+        "type": "string"
+      },
+      "CONTEXTE": {
+        "value": "CXTMVS_MES_STA",
+        "type": "string"
+      },
+      "DESCRIPTION": null,
+      "TYPE ": {
+        "value": "MVS_EQT_MES",
+        "type": "string"
+      },
+      "SSTYPE": {
+        "value": "TrafficCountingStation",
+        "type": "string"
+      },
+      "ID": {
+        "value": "TC_61_880",
+        "type": "string"
+      },
+      "TITRE": {
+        "value": "Traffic counting 61+880 Km (TC_61_880)",
+        "type": "string"
+      },
+      "DATEUPDATE": {
+        "value": "2019-08-28T10:50:07+02:00",
+        "type": "date"
+      },
+      "DATEFIN": {
+        "value": null,
+        "type": "date"
+      },
+      "cfg": {
+        "type": "CPT",
+        "idInterne": "TC_61_880",
+        "profil": "TrafficCountingStation",
+        "sousType": "SIREDO_NF99340",
+        "eqtActif": "1\\\\Actif",
+        "description": "Traffic counting 61+880 Km",
+        "mesures": {
+          "pool": [
+            {
+              "value": "_1",
+              "_text": "Direction_1_WE",
+              "channels": [
+                {
+                  "value": "_0",
+                  "_text": "Slow Lane",
+                  "natures": [
+                    {
+                      "value": "QT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/QT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/QT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 6 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_3600",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/QT/3600/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 hr"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_86400",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/QT/86400/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 jr"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/TT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/TT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "VT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/VT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/VT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "BCL",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/BCL/360/0000"
+                            },
+                            "type": {
+                              "_text": "0BCLIA_B0"
+                            },
+                            "libelle": {
+                              "_text": "Sensor default"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "value": "_1",
+                  "_text": "Fast Lane",
+                  "natures": [
+                    {
+                      "value": "QT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/QT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/QT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 6 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_3600",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/QT/3600/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 hr"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_86400",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/QT/86400/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 jr"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/TT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/TT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "VT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/VT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/VT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "BCL",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/BCL/360/0000"
+                            },
+                            "type": {
+                              "_text": "0BCLIA_B0"
+                            },
+                            "libelle": {
+                              "_text": "Sensor default"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "value": "_2",
+              "_text": "Direction_2_EW",
+              "channels": [
+                {
+                  "value": "_2",
+                  "_text": "Fast Lane",
+                  "natures": [
+                    {
+                      "value": "QT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/QT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/QT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 6 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_3600",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/QT/3600/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 hr"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_86400",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/QT/86400/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 jr"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/TT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/TT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "VT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/VT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/VT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "BCL",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/BCL/360/0000"
+                            },
+                            "type": {
+                              "_text": "0BCLIA_B0"
+                            },
+                            "libelle": {
+                              "_text": "Sensor default"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "value": "_3",
+                  "_text": "Slow Lane",
+                  "natures": [
+                    {
+                      "value": "QT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/QT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/QT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 6 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_3600",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/QT/3600/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 hr"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_86400",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/QT/86400/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 jr"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/TT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/TT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "VT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/VT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/VT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "BCL",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/BCL/360/0000"
+                            },
+                            "type": {
+                              "_text": "0BCLIA_B0"
+                            },
+                            "libelle": {
+                              "_text": "Sensor default"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "titre": "Traffic counting PR 71+940 (Calcul) (TC_71_940)",
+      "DATEINFO": {
+        "value": "2019-04-16T18:46:35+02:00",
+        "type": "date"
+      },
+      "SOURCE": {
+        "value": "mivisu",
+        "type": "string"
+      },
+      "CONTEXTE": {
+        "value": "CXTMVS_MES_STA",
+        "type": "string"
+      },
+      "DESCRIPTION": null,
+      "TYPE ": {
+        "value": "MVS_EQT_MES",
+        "type": "string"
+      },
+      "SSTYPE": {
+        "value": "TrafficCountingStation",
+        "type": "string"
+      },
+      "ID": {
+        "value": "TC_71_940",
+        "type": "string"
+      },
+      "TITRE": {
+        "value": "Traffic counting 71+940 Km (TC_71_940)",
+        "type": "string"
+      },
+      "DATEUPDATE": {
+        "value": "2019-08-28T10:50:07+02:00",
+        "type": "date"
+      },
+      "DATEFIN": {
+        "value": null,
+        "type": "date"
+      },
+      "cfg": {
+        "type": "CPT",
+        "idInterne": "TC_71_940",
+        "profil": "TrafficCountingStation",
+        "sousType": "SIREDO_NF99340",
+        "eqtActif": "1\\\\Actif",
+        "description": "Traffic counting 71+940 Km",
+        "mesures": {
+          "pool": [
+            {
+              "value": "_1",
+              "_text": "Direction_1_WE",
+              "channels": [
+                {
+                  "value": "_0",
+                  "_text": "Slow Lane",
+                  "natures": [
+                    {
+                      "value": "QT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/QT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/QT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 6 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_3600",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/QT/3600/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 hr"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_86400",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/QT/86400/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 jr"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/TT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/TT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "VT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/VT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/VT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "BCL",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/BCL/360/0000"
+                            },
+                            "type": {
+                              "_text": "0BCLIA_B0"
+                            },
+                            "libelle": {
+                              "_text": "Sensor default"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "value": "_1",
+                  "_text": "Fast Lane",
+                  "natures": [
+                    {
+                      "value": "QT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/QT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/QT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 6 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_3600",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/QT/3600/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 hr"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_86400",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/QT/86400/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 jr"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/TT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/TT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "VT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/VT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/VT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "BCL",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/BCL/360/0000"
+                            },
+                            "type": {
+                              "_text": "0BCLIA_B0"
+                            },
+                            "libelle": {
+                              "_text": "Sensor default"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "value": "_2",
+              "_text": "Direction_2_EW",
+              "channels": [
+                {
+                  "value": "_2",
+                  "_text": "Fast Lane",
+                  "natures": [
+                    {
+                      "value": "QT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/QT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/QT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 6 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_3600",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/QT/3600/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 hr"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_86400",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/QT/86400/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 jr"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/TT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/TT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "VT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/VT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/VT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "BCL",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/BCL/360/0000"
+                            },
+                            "type": {
+                              "_text": "0BCLIA_B0"
+                            },
+                            "libelle": {
+                              "_text": "Sensor default"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "value": "_3",
+                  "_text": "Slow Lane",
+                  "natures": [
+                    {
+                      "value": "QT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/QT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/QT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 6 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_3600",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/QT/3600/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 hr"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_86400",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/QT/86400/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 jr"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/TT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/TT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "VT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/VT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/VT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "BCL",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/BCL/360/0000"
+                            },
+                            "type": {
+                              "_text": "0BCLIA_B0"
+                            },
+                            "libelle": {
+                              "_text": "Sensor default"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "titre": "Traffic counting PR 81+700 (Calcul) (TC_81_700)",
+      "DATEINFO": {
+        "value": "2019-04-16T18:46:35+02:00",
+        "type": "date"
+      },
+      "SOURCE": {
+        "value": "mivisu",
+        "type": "string"
+      },
+      "CONTEXTE": {
+        "value": "CXTMVS_MES_STA",
+        "type": "string"
+      },
+      "DESCRIPTION": null,
+      "TYPE ": {
+        "value": "MVS_EQT_MES",
+        "type": "string"
+      },
+      "SSTYPE": {
+        "value": "TrafficCountingStation",
+        "type": "string"
+      },
+      "ID": {
+        "value": "TC_81_700",
+        "type": "string"
+      },
+      "TITRE": {
+        "value": "Traffic counting 81+700 Km (TC_81_700)",
+        "type": "string"
+      },
+      "DATEUPDATE": {
+        "value": "2019-08-28T10:50:07+02:00",
+        "type": "date"
+      },
+      "DATEFIN": {
+        "value": null,
+        "type": "date"
+      },
+      "cfg": {
+        "type": "CPT",
+        "idInterne": "TC_81_700",
+        "profil": "TrafficCountingStation",
+        "sousType": "SIREDO_NF99340",
+        "eqtActif": "1\\\\Actif",
+        "description": "Traffic counting 81+700 Km",
+        "mesures": {
+          "pool": [
+            {
+              "value": "_1",
+              "_text": "Direction_1_WE",
+              "channels": [
+                {
+                  "value": "_0",
+                  "_text": "Slow Lane",
+                  "natures": [
+                    {
+                      "value": "QT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/QT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/QT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 6 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_3600",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/QT/3600/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 hr"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_86400",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/QT/86400/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 jr"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/TT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/TT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "VT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/VT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/VT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "BCL",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/BCL/360/0000"
+                            },
+                            "type": {
+                              "_text": "0BCLIA_B0"
+                            },
+                            "libelle": {
+                              "_text": "Sensor default"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "value": "_1",
+                  "_text": "Fast Lane",
+                  "natures": [
+                    {
+                      "value": "QT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/QT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/QT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 6 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_3600",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/QT/3600/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 hr"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_86400",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/QT/86400/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 jr"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/TT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/TT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "VT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/VT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/VT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "BCL",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/BCL/360/0000"
+                            },
+                            "type": {
+                              "_text": "0BCLIA_B0"
+                            },
+                            "libelle": {
+                              "_text": "Sensor default"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "value": "_2",
+              "_text": "Direction_2_EW",
+              "channels": [
+                {
+                  "value": "_2",
+                  "_text": "Fast Lane",
+                  "natures": [
+                    {
+                      "value": "QT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/QT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/QT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 6 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_3600",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/QT/3600/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 hr"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_86400",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/QT/86400/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 jr"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/TT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/TT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "VT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/VT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/VT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "BCL",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/BCL/360/0000"
+                            },
+                            "type": {
+                              "_text": "0BCLIA_B0"
+                            },
+                            "libelle": {
+                              "_text": "Sensor default"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "value": "_3",
+                  "_text": "Slow Lane",
+                  "natures": [
+                    {
+                      "value": "QT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/QT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/QT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 6 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_3600",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/QT/3600/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 hr"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_86400",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/QT/86400/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 jr"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/TT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/TT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "VT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/VT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/VT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "BCL",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/BCL/360/0000"
+                            },
+                            "type": {
+                              "_text": "0BCLIA_B0"
+                            },
+                            "libelle": {
+                              "_text": "Sensor default"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "titre": "Traffic counting PR 84+350 (Calcul) (TC_84_350)",
+      "DATEINFO": {
+        "value": "2019-04-16T18:46:35+02:00",
+        "type": "date"
+      },
+      "SOURCE": {
+        "value": "mivisu",
+        "type": "string"
+      },
+      "CONTEXTE": {
+        "value": "CXTMVS_MES_STA",
+        "type": "string"
+      },
+      "DESCRIPTION": null,
+      "TYPE ": {
+        "value": "MVS_EQT_MES",
+        "type": "string"
+      },
+      "SSTYPE": {
+        "value": "TrafficCountingStation",
+        "type": "string"
+      },
+      "ID": {
+        "value": "TC_84_350",
+        "type": "string"
+      },
+      "TITRE": {
+        "value": "Traffic counting 84+350 Km (TC_84_350)",
+        "type": "string"
+      },
+      "DATEUPDATE": {
+        "value": "2019-08-28T10:50:07+02:00",
+        "type": "date"
+      },
+      "DATEFIN": {
+        "value": null,
+        "type": "date"
+      },
+      "cfg": {
+        "type": "CPT",
+        "idInterne": "TC_84_350",
+        "profil": "TrafficCountingStation",
+        "sousType": "SIREDO_NF99340",
+        "eqtActif": "1\\\\Actif",
+        "description": "Traffic counting 84+350 Km",
+        "mesures": {
+          "pool": [
+            {
+              "value": "_1",
+              "_text": "Direction_1_WE",
+              "channels": [
+                {
+                  "value": "_0",
+                  "_text": "Slow Lane",
+                  "natures": [
+                    {
+                      "value": "QT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/QT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/QT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 6 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_3600",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/QT/3600/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 hr"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_86400",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/QT/86400/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 jr"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/TT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/TT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "VT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/VT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/VT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "BCL",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/BCL/360/0000"
+                            },
+                            "type": {
+                              "_text": "0BCLIA_B0"
+                            },
+                            "libelle": {
+                              "_text": "Sensor default"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "value": "_1",
+                  "_text": "Fast Lane",
+                  "natures": [
+                    {
+                      "value": "QT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/QT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/QT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 6 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_3600",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/QT/3600/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 hr"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_86400",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/QT/86400/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 jr"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/TT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/TT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "VT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/VT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/VT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "BCL",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/BCL/360/0000"
+                            },
+                            "type": {
+                              "_text": "0BCLIA_B0"
+                            },
+                            "libelle": {
+                              "_text": "Sensor default"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "value": "_2",
+              "_text": "Direction_2_EW",
+              "channels": [
+                {
+                  "value": "_2",
+                  "_text": "Fast Lane",
+                  "natures": [
+                    {
+                      "value": "QT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/QT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/QT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 6 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_3600",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/QT/3600/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 hr"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_86400",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/QT/86400/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 jr"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/TT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/TT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "VT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/VT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/VT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "BCL",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/BCL/360/0000"
+                            },
+                            "type": {
+                              "_text": "0BCLIA_B0"
+                            },
+                            "libelle": {
+                              "_text": "Sensor default"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "value": "_3",
+                  "_text": "Slow Lane",
+                  "natures": [
+                    {
+                      "value": "QT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/QT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/QT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 6 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_3600",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/QT/3600/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 hr"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_86400",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/QT/86400/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 jr"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/TT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/TT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "VT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/VT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/VT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "BCL",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/BCL/360/0000"
+                            },
+                            "type": {
+                              "_text": "0BCLIA_B0"
+                            },
+                            "libelle": {
+                              "_text": "Sensor default"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "titre": "Traffic counting PR 96+050 (Calcul) (TC_96_050)",
+      "DATEINFO": {
+        "value": "2019-04-16T18:46:35+02:00",
+        "type": "date"
+      },
+      "SOURCE": {
+        "value": "mivisu",
+        "type": "string"
+      },
+      "CONTEXTE": {
+        "value": "CXTMVS_MES_STA",
+        "type": "string"
+      },
+      "DESCRIPTION": null,
+      "TYPE ": {
+        "value": "MVS_EQT_MES",
+        "type": "string"
+      },
+      "SSTYPE": {
+        "value": "TrafficCountingStation",
+        "type": "string"
+      },
+      "ID": {
+        "value": "TC_96_050",
+        "type": "string"
+      },
+      "TITRE": {
+        "value": "Traffic counting 96+050 Km (TC_96_050)",
+        "type": "string"
+      },
+      "DATEUPDATE": {
+        "value": "2019-08-28T10:50:07+02:00",
+        "type": "date"
+      },
+      "DATEFIN": {
+        "value": null,
+        "type": "date"
+      },
+      "cfg": {
+        "type": "CPT",
+        "idInterne": "TC_96_050",
+        "profil": "TrafficCountingStation",
+        "sousType": "SIREDO_NF99340",
+        "eqtActif": "1\\\\Actif",
+        "description": "Traffic counting 96+050 Km",
+        "mesures": {
+          "pool": [
+            {
+              "value": "_1",
+              "_text": "Direction_1_WE",
+              "channels": [
+                {
+                  "value": "_0",
+                  "_text": "Slow Lane",
+                  "natures": [
+                    {
+                      "value": "QT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/QT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/QT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 6 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_3600",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/QT/3600/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 hr"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_86400",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/QT/86400/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 jr"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/TT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/TT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "VT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/VT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/VT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "BCL",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/0/BCL/360/0000"
+                            },
+                            "type": {
+                              "_text": "0BCLIA_B0"
+                            },
+                            "libelle": {
+                              "_text": "Sensor default"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "value": "_1",
+                  "_text": "Fast Lane",
+                  "natures": [
+                    {
+                      "value": "QT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/QT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/QT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 6 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_3600",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/QT/3600/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 hr"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_86400",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/QT/86400/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 jr"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/TT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/TT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "VT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/VT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/VT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "BCL",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "1/1/BCL/360/0000"
+                            },
+                            "type": {
+                              "_text": "0BCLIA_B0"
+                            },
+                            "libelle": {
+                              "_text": "Sensor default"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "value": "_2",
+              "_text": "Direction_2_EW",
+              "channels": [
+                {
+                  "value": "_2",
+                  "_text": "Fast Lane",
+                  "natures": [
+                    {
+                      "value": "QT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/QT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/QT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 6 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_3600",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/QT/3600/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 hr"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_86400",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/QT/86400/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 jr"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/TT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/TT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "VT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/VT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/VT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "BCL",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/2/BCL/360/0000"
+                            },
+                            "type": {
+                              "_text": "0BCLIA_B0"
+                            },
+                            "libelle": {
+                              "_text": "Sensor default"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "value": "_3",
+                  "_text": "Slow Lane",
+                  "natures": [
+                    {
+                      "value": "QT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/QT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/QT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 6 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_3600",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/QT/3600/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 hr"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_86400",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/QT/86400/0000"
+                            },
+                            "type": {
+                              "_text": "0QT_SQ_E0"
+                            },
+                            "libelle": {
+                              "_text": "Összes gépjármuadat 1 jr"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/TT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/TT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0TTCMP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Átlag 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "VT",
+                      "period": [
+                        {
+                          "value": "_60",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/VT/60/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 1 perces"
+                            }
+                          }
+                        },
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/VT/360/0000"
+                            },
+                            "type": {
+                              "_text": "0VT_MKHE0"
+                            },
+                            "libelle": {
+                              "_text": "Átlagos sebesség 6 perces"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "BCL",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/3/BCL/360/0000"
+                            },
+                            "type": {
+                              "_text": "0BCLIA_B0"
+                            },
+                            "libelle": {
+                              "_text": "Sensor default"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "requestId": "12345",
+  "deploymentId": 1
+}

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>hu.tradeland</groupId>
+    <artifactId>rmhub</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>rmhub-starter</artifactId>
+  <name>RMHub starter project</name>
+  <description>Starter for building RESTful applications for RMHub platform using Spring MVC.</description>
+
+  <organization>
+    <name>CMC Global Co., Ltd</name>
+    <url>https://www.cmcglobal.com.vn/</url>
+  </organization>
+
+  <dependencies>
+
+    <!-- MUST HAVE -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-actuator</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>io.micrometer</groupId>
+      <artifactId>micrometer-registry-prometheus</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.flywaydb</groupId>
+      <artifactId>flyway-core</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>hu.tradeland</groupId>
+      <artifactId>common-core</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>hu.tradeland</groupId>
+      <artifactId>data-model</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>hu.tradeland</groupId>
+      <artifactId>infrastructure</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>hu.tradeland</groupId>
+      <artifactId>kafka-connector</artifactId>
+    </dependency>
+
+    <!-- SHOULD HAVE -->
+    <dependency>
+      <groupId>hu.tradeland</groupId>
+      <artifactId>common-utility</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+    </dependency>
+
+  </dependencies>
+
+  <build>
+
+    <plugins>
+      <plugin>
+        <groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+        <configuration>
+          <!-- we don't need to generate jacoco report for this starter module, but unit test should still be executed -->
+          <skip>true</skip>
+        </configuration>
+      </plugin>
+    </plugins>
+
+  </build>
+
+</project>

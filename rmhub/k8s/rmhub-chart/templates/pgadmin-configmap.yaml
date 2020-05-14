@@ -1,0 +1,28 @@
+# for simplicity, the pgadmin is configured only for device-mgmt-module's database
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: pgadmin-configmap
+data:
+  servers.json: |
+    {
+      "Servers": {
+        "1": {
+            "Name": "rmhub",
+            "Group": "Servers",
+            "Host": "{{ .Values.device_mgmt_module.postgresql.serviceName }}",
+            "Port": {{ .Values.device_mgmt_module.postgresql.port }},
+            "MaintenanceDB": "{{ .Values.device_mgmt_module.postgresql.db }}",
+            "Username": "{{ .Values.device_mgmt_module.postgresql.user }}",
+            "SSLMode": "prefer",
+            "SSLCert": "<STORAGE_DIR>/.postgresql/postgresql.crt",
+            "SSLKey": "<STORAGE_DIR>/.postgresql/postgresql.key",
+            "SSLCompression": 0,
+            "BGColor": "#6aa84f",
+            "Timeout": 0,
+            "UseSSHTunnel": 0,
+            "TunnelPort": "22",
+            "TunnelAuthentication": 0
+        }
+      }
+    }

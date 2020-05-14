@@ -1,0 +1,46 @@
+{
+  "InfoGeneric": [
+    {
+      "titre": "Traffic counting PR 44+400 (Calcul) (TC_44_400)",
+      "DATEINFO": {
+        "value": "2019-04-16T18:46:35+02:00",
+        "type": "date"
+      },
+      "SOURCE": {
+        "value": "mivisu",
+        "type": "string"
+      },
+      "CONTEXTE": {
+        "value": "CXTMVS_MES_STA",
+        "type": "string"
+      },
+      "DESCRIPTION": null,
+      "TYPE ": {
+        "value": "MVS_EQT_MES",
+        "type": "string"
+      },
+      "SSTYPE": {
+        "value": "TrafficCountingStation",
+        "type": "string"
+      },
+      "ID": {
+        "value": "TC_44_400",
+        "type": "string"
+      },
+      "TITRE": {
+        "value": "Traffic counting 44+400 Km (TC_44_400)",
+        "type": "string"
+      },
+      "DATEUPDATE": {
+        "value": "2019-08-28T10:50:07+02:00",
+        "type": "date"
+      },
+      "DATEFIN": {
+        "value": null,
+        "type": "date"
+      }
+    }
+  ],
+  "requestId": "12345",
+  "deploymentId": 1
+}

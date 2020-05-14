@@ -1,0 +1,21 @@
+RMHub on kubernetes is installed.
+Release name: {{ .Release.Name }} in namespace {{ .Release.Namespace }}
+
+You can use the following rmhub services where default ports are exposed to the given
+url on port *80*
+
+mivisu-connector-ssilm: {{ .Values.mivisu_connector_ssilm.serviceName }}.{{ .Values.ingress.host }}
+mivisu-connector-api: {{ .Values.mivisu_connector_api.serviceName }}.{{ .Values.ingress.host }}
+device-mgmt-module: {{ .Values.device_mgmt_module.serviceName }}.{{ .Values.ingress.host }}
+weather-station-module: {{ .Values.weather_station_module.serviceName }}.{{ .Values.ingress.host }}
+traffic-logger-module: {{ .Values.traffic_logger_module.serviceName }}.{{ .Values.ingress.host }}
+notification-module: {{ .Values.notification_module.serviceName }}.{{ .Values.ingress.host }}
+
+3rd party management softwares:
+kafka-manager: {{ .Values.kafka_manager.serviceName }}.{{ .Values.ingress.host }}
+kafdrop: {{ .Values.kafdrop.serviceName }}.{{ .Values.ingress.host }}
+pgadmin: {{ .Values.pgadmin.serviceName }}.{{ .Values.ingress.host }}
+
+
+You can also reach a couple generated content using gitlab's built in integration with review app, pages, environments
+by using the links attached to your merge request (if there is any) or by links you can see on this job's pipeline page

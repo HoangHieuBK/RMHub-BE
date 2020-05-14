@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.weather_station_module.serviceName }}
+  labels:
+    run: {{ .Values.weather_station_module.serviceName }}
+spec:
+  ports:
+  - port: {{ .Values.weather_station_module.port }}
+    targetPort: service-port
+    protocol: TCP
+  selector:
+    app: {{ .Values.weather_station_module.serviceName }}

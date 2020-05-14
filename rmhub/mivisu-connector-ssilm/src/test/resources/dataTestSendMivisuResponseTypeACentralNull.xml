@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<MIVISU>
+	<info_txt>Externe 2 Mesure.CR relecture mesure equipement</info_txt>
+	<CORPS>
+		<Rep_Nb_Eqt>0</Rep_Nb_Eqt>
+	</CORPS>
+	<ENT>
+		<type>A</type>
+		<version>2</version>
+		<lgmes>1550</lgmes>
+		<id>ABC</id>
+	</ENT>
+</MIVISU>

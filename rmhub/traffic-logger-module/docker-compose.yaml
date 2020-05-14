@@ -1,0 +1,44 @@
+# This compose also works for Docker on Windows, trust me!
+version: '3'
+services:
+  zookeeper:
+    image: "wurstmeister/zookeeper"
+    container_name: "zookeeper"
+    restart: always
+    ports:
+      - "2181:2181"
+    networks:
+      - local
+
+  kafka:
+    image: "wurstmeister/kafka"
+    container_name: "kafka"
+    restart: always
+    environment:
+      KAFKA_ZOOKEEPER_CONNECT: "zookeeper:2181"
+      KAFKA_LISTENERS: "PLAINTEXT://:9092"
+      KAFKA_ADVERTISED_LISTENERS: "PLAINTEXT://localhost:9092"
+      KAKFA_BROKER_ID: 1
+    ports:
+      - "9092:9092"
+    depends_on:
+      - zookeeper
+    networks:
+      - local
+
+  # Single DB instance - Single DB schema per service
+  postgres:
+    container_name: "postgres"
+    image: postgres:10.9
+    restart: always
+    environment:
+      POSTGRES_DB: "rmhub"
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "123456"
+    ports:
+      - "5432:5432"
+    networks:
+      - local
+
+networks:
+  local:

@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.mivisu_connector_api.serviceName }}
+  labels:
+    app: {{ .Values.mivisu_connector_api.serviceName }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ .Values.mivisu_connector_api.serviceName }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.mivisu_connector_api.serviceName }}
+    spec:
+      containers:
+      - image: "{{ .Values.mivisu_connector_api.image }}:{{ .Values.mivisu_connector_api.tag }}"
+        name: {{ .Values.mivisu_connector_api.serviceName }}
+        imagePullPolicy: {{ .Values.mivisu_connector_api.imagePullPolicy }}
+        env:
+        - name: SPRING_KAFKA_BOOTSTRAP_SERVERS
+          value: "http://{{ .Values.kafka.serviceName }}:{{ .Values.kafka.port }}"
+        - name: SERVER_PORT
+          value: "8068"
+        - name: RMHUB_MIVISU_API_URL
+          value: {{ .Values.mivisu_connector_api.mivisu_api_url }}
+        - name: LOGGING_LEVEL_ORG_SPRINGFRAMEWORK
+          value: "WARN"
+        - name: LOGGING_LEVEL_RMHUB
+          value: "INFO"
+        ports:
+        - containerPort: 8068
+          name: service-port
+        volumeMounts:
+        - mountPath: /tmp
+          name: mivisu-connector-api-tmp
+      imagePullSecrets:
+      - name: {{ .Values.dockerCredentialSecretPath }}
+      volumes:
+      - name: mivisu-connector-api-tmp
+        emptyDir: {}

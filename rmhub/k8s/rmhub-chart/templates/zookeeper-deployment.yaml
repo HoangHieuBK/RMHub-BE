@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.zookeeper.serviceName }}
+  labels:
+    app: {{ .Values.zookeeper.serviceName }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ .Values.zookeeper.serviceName }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.zookeeper.serviceName }}
+    spec:
+      containers:
+      - image: "{{ .Values.zookeeper.image }}:{{ .Values.zookeeper.tag }}"
+        name: {{ .Values.zookeeper.serviceName }}
+        ports:
+          - containerPort: 2181
+            name: service-port
+      restartPolicy: Always

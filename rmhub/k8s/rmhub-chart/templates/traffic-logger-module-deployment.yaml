@@ -1,0 +1,48 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.traffic_logger_module.serviceName }}
+  labels:
+    app: {{ .Values.traffic_logger_module.serviceName }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ .Values.traffic_logger_module.serviceName }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.traffic_logger_module.serviceName }}
+    spec:
+      containers:
+      - image: "{{ .Values.traffic_logger_module.image }}:{{ .Values.traffic_logger_module.tag }}"
+        name: {{ .Values.traffic_logger_module.serviceName }}
+        imagePullPolicy: {{ .Values.traffic_logger_module.imagePullPolicy }}
+        env:
+        - name: SPRING_KAFKA_BOOTSTRAP_SERVERS
+          value: "http://{{ .Values.kafka.serviceName }}:{{ .Values.kafka.port }}"
+        - name: SPRING_DATASOURCE_URL
+          value: jdbc:postgresql://{{ .Values.traffic_logger_module.postgresql.serviceName }}:{{ .Values.traffic_logger_module.postgresql.port }}/{{ .Values.traffic_logger_module.postgresql.db }}
+        - name: SPRING_DATASOURCE_USERNAME
+          value: {{ .Values.traffic_logger_module.postgresql.user }}
+        - name: SPRING_DATASOURCE_PASSWORD
+          value: {{ .Values.traffic_logger_module.postgresql.password }}
+        - name: SERVER_PORT
+          value: "8065"
+        - name: LOGGING_LEVEL_ORG_SPRINGFRAMEWORK
+          value: "WARN"
+        - name: LOGGING_LEVEL_RMHUB
+          value: "INFO"
+        - name: SPRING_JPA_SHOW_SQL
+          value: "false"
+        ports:
+        - containerPort: 8065
+          name: service-port
+        volumeMounts:
+        - mountPath: /tmp
+          name: traffic-logger-module-tmp
+      imagePullSecrets:
+      - name: {{ .Values.dockerCredentialSecretPath }}
+      volumes:
+      - name: traffic-logger-module-tmp
+        emptyDir: {}

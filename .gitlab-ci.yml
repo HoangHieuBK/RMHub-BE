@@ -1,0 +1,340 @@
+stages:
+  - build
+  - test
+  - report
+  - build-docker-image
+  - deploy
+
+variables:
+  PROJECT_ID: $CI_PROJECT_ID
+  MAVEN_CLI_OPTS: "--no-transfer-progress"
+  MAVEN_OPTS: "-Dmaven.repo.local=$CI_PROJECT_DIR/$MAVEN_REPO"
+  DOCKER_HOST: tcp://127.0.0.1:2375
+  DOCKER_TLS_CERTDIR: ""
+  DOCKER_DRIVER: overlay2
+  TAG: $CI_COMMIT_REF_SLUG
+  REGISTRY: "https://eu.gcr.io"
+  REGISTRY_USER: "_json_key"
+  REGISTRY_PASSWORD: "$GCLOUD_SERVICE_KEY"
+  REGISTRY_NAMESPACE: "eu.gcr.io/$GCLOUD_PROJECT_ID"
+  NAMESPACE: "rmhub-$CI_PROJECT_PATH_SLUG-$CI_COMMIT_REF_SLUG-$CI_COMMIT_SHORT_SHA"
+  TILLER_NAMESPACE: "rmhub-pipeline"
+
+before_script:
+  - cd rmhub
+
+#### TEMPLATES ####
+
+.base-unittest: &base-unittest
+  stage: test
+  image: maven:3.6.1-jdk-11-slim
+  only:
+    - master
+    - /hotfix\/.*/
+    - /feature\/.*/
+    - /^develop$/
+    - /release\/.*/
+    - /feature\/leannet*/
+  # just for testing
+  allow_failure: true
+  script:
+    # If cache retrieve failed this will regenerate jars and download required
+    # dependencies. If cache download succeed it won't regenerate anything
+    - mvn -T 2C -DskipTests package install $MAVEN_CLI_OPTS
+    - mvn -T 2C test -pl $MODULE $MAVEN_CLI_OPTS
+  dependencies:
+    - build-jar
+  cache:
+    # use the same key for testing and for jar build
+    # so we don't need to download dependencies multiple times
+    # in the same pipeline
+    key: $CI_COMMIT_REF_NAME
+    policy: pull
+    paths:
+      - "$CI_PROJECT_DIR/$MAVEN_REPO"
+      - "$CI_PROJECT_DIR/rmhub/*/target"
+  artifacts:
+    # save unittest results for later use
+    name: unittests
+    paths:
+      - "$CI_PROJECT_DIR/rmhub/*/target/surefire-reports/TEST-*.xml"
+      - "$CI_PROJECT_DIR/rmhub/*/target/failsafe-reports/TEST-*.xml"
+      - "$CI_PROJECT_DIR/rmhub/jacoco/*"
+    # save unittest results for gitlab parsers
+    reports:
+      junit:
+        - "$CI_PROJECT_DIR/rmhub/*/target/surefire-reports/TEST-*.xml"
+        - "$CI_PROJECT_DIR/rmhub/*/target/failsafe-reports/TEST-*.xml"
+
+.docker-build: &docker-build # base config to build docker images
+  stage: build-docker-image
+  image: docker:git
+  only:
+    - master
+    - /release\/.*/
+    - /hotfix\/.*/
+    - /feature\/leannet*/
+  dependencies:
+    - build-jar
+  variables:
+    IMAGE: nosuchimage
+    DOCKER_FILE: nosuchfile
+    DOCKER_CONTEXT: nosuchcontext
+  services:
+    - docker:stable-dind
+  before_script:
+    - cd rmhub
+    - docker info
+    - docker login -u "$REGISTRY_USER" -p "$REGISTRY_PASSWORD" $REGISTRY
+  script:
+    - docker build -f $DOCKER_FILE -t $REGISTRY_NAMESPACE/$IMAGE:$TAG $DOCKER_CONTEXT
+  after_script:
+    - docker push $REGISTRY_NAMESPACE/$IMAGE:$TAG
+
+build-jar:
+  stage: build
+  image: maven:3.6.1-jdk-11-slim
+  only:
+    - master
+    - /^develop$/
+    - /release\/.*/
+    - /hotfix\/.*/
+    - /feature\/leannet*/
+  script:
+    - mvn -T 2C -DskipTests package install $MAVEN_CLI_OPTS
+    - ls -alth */target/*.jar
+  cache:
+    # use the same key for testing and for jar build
+    # so we don't need to download dependencies multiple times
+    # in the same pipeline
+    key: $CI_COMMIT_REF_NAME
+    policy: push
+    paths:
+      - $CI_PROJECT_DIR/$MAVEN_REPO
+      - "$CI_PROJECT_DIR/rmhub/*/target"
+  artifacts:
+    paths:
+      - "rmhub/*/target/*.jar"
+    expire_in: 1 week
+
+.unittest-vms-module:
+  extends: .base-unittest
+  variables:
+    MODULE: vms-module
+
+.unittest-rmhub-starter:
+  extends: .base-unittest
+  variables:
+    MODULE: rmhub-starter
+
+.unittest-common-utility:
+  extends: .base-unittest
+  variables:
+    MODULE: common-utility
+
+.unittest-data-file-access:
+  extends: .base-unittest
+  variables:
+    MODULE: data-file-access
+
+unittest-mivisu-connector-ssilm:
+  extends: .base-unittest
+  variables:
+    MODULE: mivisu-connector-ssilm
+
+unittest-mivisu-connector-api:
+  extends: .base-unittest
+  variables:
+    MODULE: mivisu-connector-api
+
+unittest-device-mgmt-module:
+  extends: .base-unittest
+  variables:
+    MODULE: device-mgmt-module
+
+unittest-weather-station-module:
+  extends: .base-unittest
+  variables:
+    MODULE: weather-station-module
+
+unittest-traffic-logger-module:
+  extends: .base-unittest
+  variables:
+    MODULE: traffic-logger-module
+
+unittest-notification-module:
+  extends: .base-unittest
+  variables:
+    MODULE: notification-module
+
+# Upload jococo results to a publicly available
+# static page
+publish-unittest:
+  image: kroniak/ssh-client
+  only:
+    - master
+    - /hotfix\/.*/
+    - /feature\/.*/
+    - /^develop$/
+    - /release\/.*/
+    - /feature\/leannet*/
+  allow_failure: true
+  stage: report
+  variables:
+    TARGET_PATH: "${CI_PROJECT_NAMESPACE}/${CI_PROJECT_NAME}/${CI_COMMIT_REF_SLUG}/${CI_COMMIT_SHORT_SHA}"
+    STATIC_SERVER: "nginx-static-service.rmhub-pipeline.svc.cluster.local"
+  environment:
+    name: test/coverage/$CI_COMMIT_REF_SLUG
+    url: http://ut-results.${KUBE_INGRESS_BASE_DOMAIN}/${CI_PROJECT_NAMESPACE}/${CI_PROJECT_NAME}/${CI_COMMIT_REF_SLUG}/${CI_COMMIT_SHORT_SHA}
+  script:
+    - export NGINX_TARGET_FOLDER="/usr/share/nginx/html/${TARGET_PATH}"
+    - echo "${NGINX_STATIC_KEY}" > key.priv
+    - chmod 600 key.priv
+    - mkdir -p ~/.ssh
+    - echo "${NGINX_STATIC_FINGERPRINT}" >> ~/.ssh/known_hosts
+    - ssh -i key.priv root@${STATIC_SERVER} mkdir -p "${NGINX_TARGET_FOLDER}"
+    - for target in jacoco/*; do
+      echo "Copy jacoco tests from ${target}";
+      module=$(echo ${target} | cut -d'/' -f2);
+      echo "Detected module name ${module}";
+      scp -r -i key.priv ${target} root@${STATIC_SERVER}:${NGINX_TARGET_FOLDER}/${module}/;
+      done
+    - rm key.priv
+
+docker-build-mivisu-connector-ssilm:
+  # use the docker-build template
+  <<: *docker-build
+  # required in docker-build template
+  variables:
+    IMAGE: mivisu-connector-ssilm
+    DOCKER_FILE: "mivisu-connector-ssilm/Dockerfile"
+    DOCKER_CONTEXT: "mivisu-connector-ssilm"
+  needs: ["build-jar", "unittest-mivisu-connector-ssilm"]
+
+docker-build-traffic-logger-module:
+  <<: *docker-build
+  variables:
+    IMAGE: traffic-logger-module
+    DOCKER_FILE: "traffic-logger-module/Dockerfile"
+    DOCKER_CONTEXT: "traffic-logger-module"
+  needs: ["build-jar", "unittest-traffic-logger-module"]
+
+docker-build-device-mgmt-module:
+  <<: *docker-build
+  variables:
+    IMAGE: device-mgmt-module
+    DOCKER_FILE: "device-mgmt-module/Dockerfile"
+    DOCKER_CONTEXT: "device-mgmt-module"
+  needs: ["build-jar", "unittest-device-mgmt-module"]
+
+docker-build-notification-module:
+  <<: *docker-build
+  variables:
+    IMAGE: notification-module
+    DOCKER_FILE: "notification-module/Dockerfile"
+    DOCKER_CONTEXT: "notification-module"
+  needs: ["build-jar", "unittest-notification-module"]
+
+docker-build-mivisu-connector-api:
+  <<: *docker-build
+  variables:
+    IMAGE: mivisu-connector-api
+    DOCKER_FILE: "mivisu-connector-api/Dockerfile"
+    DOCKER_CONTEXT: "mivisu-connector-api"
+  needs: ["build-jar", "unittest-mivisu-connector-api"]
+
+docker-build-weather-station-module:
+  <<: *docker-build
+  variables:
+    IMAGE: weather-station-module
+    DOCKER_FILE: "weather-station-module/Dockerfile"
+    DOCKER_CONTEXT: "weather-station-module"
+  needs: ["build-jar", "unittest-weather-station-module"]
+
+kubernetes-deploy:
+  stage: deploy
+  only:
+    - master
+    - /release\/.*/
+    - /hotfix\/.*/
+    - /feature\/leannet*/
+  dependencies: []
+  when: manual
+  # base image with kubectl and helm installed on it
+  # created just for this build
+  # image: registry.gitlab.com/lillyneir-dev/rmhub-delivery-demo/kubebase:latest
+  image: eu.gcr.io/aerial-utility-244114/kubebase:0.1
+  environment:
+    name: review/$CI_COMMIT_REF_SLUG
+    url: "http://kafdrop-service.rmhub-${CI_PROJECT_PATH_SLUG}-${CI_COMMIT_REF_SLUG}-${CI_COMMIT_SHORT_SHA}.${KUBE_INGRESS_BASE_DOMAIN}"
+    # job to stop created helm chart and namespace
+    on_stop: delete-kubernetes-deploy
+  variables:
+    DOCKER_SECRET_NAME: regcred
+  before_script:
+    - cd rmhub
+    - echo "$HELM_TLS_CA_CERT_CONTENT" > $HELM_HOME/ca.pem
+    - echo "$HELM_TLS_CERT_CONTENT" > $HELM_HOME/cert.pem
+    - echo "$HELM_TLS_KEY_CONTENT" > $HELM_HOME/key.pem
+    - helm init --client-only
+    - alias helm="helm --namespace $NAMESPACE"
+    - unset KUBECONFIG
+  script:
+    - |
+      cat <<EOM > values.yaml
+      dockerCredentialSecretPath: '$DOCKER_SECRET_NAME'
+      imageCredentials:
+        registry: '$REGISTRY'
+        username: '$REGISTRY_USER'
+        password: '$REGISTRY_PASSWORD'
+      mivisu-connector-ssilm:
+        image: "eu.gcr.io/$GCLOUD_PROJECT_ID/mivisu-connector-ssilm"
+        tag: "$TAG"
+      traffic-logger-module:
+        image: "eu.gcr.io/$GCLOUD_PROJECT_ID/traffic-logger-module"
+        tag: "$TAG"
+      device-mgmt-module:
+        image: "eu.gcr.io/$GCLOUD_PROJECT_ID/device-mgmt-module"
+        tag: "$TAG"
+      notification-module:
+        image: "eu.gcr.io/$GCLOUD_PROJECT_ID/notification-module"
+        tag: "$TAG"
+      mivisu-connector-api:
+        image: "eu.gcr.io/$GCLOUD_PROJECT_ID/mivisu-connector-api"
+        tag: "$TAG"
+      weather-station-module:
+        image: "eu.gcr.io/$GCLOUD_PROJECT_ID/weather-station-module"
+        tag: "$TAG"
+      ingress:
+        host: '${NAMESPACE}.${KUBE_INGRESS_BASE_DOMAIN}'
+      EOM
+    - helm install k8s/rmhub-chart --name $CI_COMMIT_SHORT_SHA -f values.yaml
+    - kubectl get pods -n $NAMESPACE
+
+delete-kubernetes-deploy:
+  stage: deploy
+  # image: registry.gitlab.com/lillyneir-dev/rmhub-delivery-demo/kubebase:latest
+  image: eu.gcr.io/aerial-utility-244114/kubebase:0.1
+  only:
+    - master
+    - /release\/.*/
+    - /hotfix\/.*/
+    - /feature\/leannet*/
+  dependencies: []
+  variables:
+    GIT_STRATEGY: none
+  environment:
+    name: review/$CI_COMMIT_REF_SLUG
+    action: stop
+  when: manual
+  before_script:
+    # Do not assume the repository is still there. Maybe this step was started because the branch was deleted
+    # that is why we use GIT_STRATEGY: none to skip the cloning step.
+    - echo "$HELM_TLS_CA_CERT_CONTENT" > $HELM_HOME/ca.pem
+    - echo "$HELM_TLS_CERT_CONTENT" > $HELM_HOME/cert.pem
+    - echo "$HELM_TLS_KEY_CONTENT" > $HELM_HOME/key.pem
+    - helm init --client-only
+    - unset KUBECONFIG
+  script:
+    - helm del $CI_COMMIT_SHORT_SHA --purge
+    - kubectl delete namespace $NAMESPACE

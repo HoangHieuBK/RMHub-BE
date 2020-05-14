@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.kafka.serviceName }}
+  labels:
+    app: {{ .Values.kafka.serviceName }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ .Values.kafka.serviceName }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.kafka.serviceName }}
+    spec:
+      containers:
+      - image: "{{ .Values.kafka.image }}:{{ .Values.kafka.tag }}"
+        name: {{ .Values.kafka.serviceName }}
+        ports:
+        - containerPort: 9092
+          name: service-port
+        env:
+        - name: KAFKA_INTER_BROKER_LISTENER_NAME
+          value: INSIDE 
+        - name: KAFKA_ZOOKEEPER_CONNECT
+          value: "{{ .Values.zookeeper.serviceName }}:{{ .Values.zookeeper.port }}"
+        - name: KAKFA_BROKER_ID
+          value: "{{ .Values.kafka.brokerId }}"
+        - name: KAFKA_ADVERTISED_LISTENERS
+          value: INSIDE://{{ .Values.kafka.serviceName}}:{{ .Values.kafka.port }}
+        - name: KAFKA_LISTENER_SECURITY_PROTOCOL_MAP
+          value: INSIDE:PLAINTEXT
+        - name: KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR
+          value: "1"
+        - name: KAFKA_DEFAULT_REPLICATION_FACTOR
+          value: "1"
+      restartPolicy: Always
+

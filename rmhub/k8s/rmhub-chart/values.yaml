@@ -1,0 +1,113 @@
+ingress:
+  name: review-ingress
+  host: test-host.example.com
+
+imageCredentials:
+  registry: "private_registry"
+  username: "private_registry_username"
+  password: "private_registry_password"
+dockerCredentialSecretPath: "regcred"
+
+pgadmin:
+  serviceName: "rmhub-pgadmin"
+  image: "dpage/pgadmin4"
+  user: pgadmin
+  password: pgadmin
+  tag: "latest"
+  port: 8080
+
+zookeeper:
+  serviceName: "zookeeper"
+  image: "wurstmeister/zookeeper"
+  tag: latest
+  port: 2181
+
+kafka:
+  serviceName: "kafka-service"
+  image: "confluentinc/cp-kafka"
+  tag: "5.2.1"
+  port: 9092
+  brokerId: 0
+
+kafka_manager:
+  serviceName: "kafka-manager"
+  secret: "letmein"
+  image: "sheepkiller/kafka-manager"
+  tag: latest
+  port: 9000
+
+kafdrop:
+  serviceName: "kafdrop-service"
+  image: obsidiandynamics/kafdrop
+  tag: latest
+  port: 9001
+
+device_mgmt_module:
+  serviceName: "device-mgmt-module"
+  image: "eu.gcr.io/aerial-utility-244114/device-mgmt-module"
+  tag: feature-leannet-ci-test
+  imagePullPolicy: IfNotPresent
+  port: 8066
+  postgresql:
+    image: "postgres"
+    tag: "10.4"
+    serviceName: "rmhub-postgresql-device"
+    db: device
+    user: rmhub
+    password: rmhub123
+    port: 5432
+
+traffic_logger_module:
+  serviceName: "traffic-logger-module"
+  image: "eu.gcr.io/aerial-utility-244114/traffic-logger-module"
+  tag: feature-leannet-ci-test
+  imagePullPolicy: IfNotPresent
+  port: 8065
+  postgresql:
+    image: "postgres"
+    tag: "10.4"
+    serviceName: "rmhub-postgresql-traffic"
+    db: traffic
+    user: rmhub
+    password: rmhub123
+    port: 5432
+
+weather_station_module:
+  serviceName: "weather-station-module"
+  image: "eu.gcr.io/aerial-utility-244114/weather-station-module"
+  tag: feature-leannet-ci-test
+  imagePullPolicy: IfNotPresent
+  port: 8064
+  postgresql:
+    image: "postgres"
+    tag: "10.4"
+    serviceName: "rmhub-postgresql-weather"
+    db: weather
+    user: rmhub
+    password: rmhub123
+    port: 5432
+
+notification_module:
+  serviceName: "notification-module"
+  image: "eu.gcr.io/aerial-utility-244114/notification-module"
+  tag: feature-leannet-ci-test
+  imagePullPolicy: IfNotPresent
+  port: 8067
+
+mivisu_connector_api:
+  serviceName: "mivisu-connector-api"
+  image: "eu.gcr.io/aerial-utility-244114/mivisu-connector-api"
+  tag: feature-leannet-ci-test
+  imagePullPolicy: IfNotPresent
+  port: 8068
+  mivisu_api_url: http://c10.labocom.fr/info_get_igx
+
+mivisu_connector_ssilm:
+  serviceName: "mivisu-connector-ssilm"
+  image: "eu.gcr.io/aerial-utility-244114/mivisu-connector-ssilm"
+  tag: feature-leannet-ci-test
+  imagePullPolicy: IfNotPresent
+  port: 8062
+  mivisu_ip: c10.labocom.fr
+  mivisu_port: 7521
+  mivisu_id: 1

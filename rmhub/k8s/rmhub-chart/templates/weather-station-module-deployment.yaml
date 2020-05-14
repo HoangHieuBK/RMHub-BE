@@ -1,0 +1,48 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.weather_station_module.serviceName }}
+  labels:
+    app: {{ .Values.weather_station_module.serviceName }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ .Values.weather_station_module.serviceName }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.weather_station_module.serviceName }}
+    spec:
+      containers:
+      - image: "{{ .Values.weather_station_module.image }}:{{ .Values.weather_station_module.tag }}"
+        name: {{ .Values.weather_station_module.serviceName }}
+        imagePullPolicy: {{ .Values.weather_station_module.imagePullPolicy }}
+        env:
+        - name: SPRING_KAFKA_BOOTSTRAP_SERVERS
+          value: "http://{{ .Values.kafka.serviceName }}:{{ .Values.kafka.port }}"
+        - name: SPRING_DATASOURCE_URL
+          value: jdbc:postgresql://{{ .Values.weather_station_module.postgresql.serviceName }}:{{ .Values.weather_station_module.postgresql.port }}/{{ .Values.weather_station_module.postgresql.db }}
+        - name: SPRING_DATASOURCE_USERNAME
+          value: {{ .Values.weather_station_module.postgresql.user }}
+        - name: SPRING_DATASOURCE_PASSWORD
+          value: {{ .Values.weather_station_module.postgresql.password }}
+        - name: SERVER_PORT
+          value: "8064"
+        - name: LOGGING_LEVEL_ORG_SPRINGFRAMEWORK
+          value: "WARN"
+        - name: LOGGING_LEVEL_RMHUB
+          value: "INFO"
+        - name: SPRING_JPA_SHOW_SQL
+          value: "false"
+        ports:
+        - containerPort: 8064
+          name: service-port
+        volumeMounts:
+        - mountPath: /tmp
+          name: weather-station-module-tmp
+      imagePullSecrets:
+      - name: {{ .Values.dockerCredentialSecretPath }}
+      volumes:
+      - name: weather-station-module-tmp
+        emptyDir: {}

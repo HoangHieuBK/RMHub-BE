@@ -1,0 +1,2 @@
+module rmhub.common.kafkaconnector {
+}

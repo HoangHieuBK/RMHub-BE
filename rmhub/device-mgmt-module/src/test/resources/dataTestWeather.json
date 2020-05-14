@@ -1,0 +1,2254 @@
+{
+  "InfoGeneric": [
+    {
+      "titre": "PR 51+000 (Calcul) (WS_51_000)",
+      "DATEINFO": {
+        "value": "2019-04-16T18:46:35+02:00",
+        "type": "date"
+      },
+      "SOURCE": {
+        "value": "mivisu",
+        "type": "string"
+      },
+      "CONTEXTE": {
+        "value": "CXTMVS_MES_STA",
+        "type": "string"
+      },
+      "DESCRIPTION": null,
+      "TYPE ": {
+        "value": "MVS_EQT_MES",
+        "type": "string"
+      },
+      "SSTYPE": {
+        "value": "SIGNATURE LCR WEATHER STATION",
+        "type": "string"
+      },
+      "ID": {
+        "value": "WS_51_000",
+        "type": "string"
+      },
+      "TITRE": {
+        "value": "51+000 km (WS_51_000)",
+        "type": "string"
+      },
+      "DATEUPDATE": {
+        "value": "2019-08-28T10:50:07+02:00",
+        "type": "date"
+      },
+      "DATEFIN": {
+        "value": null,
+        "type": "date"
+      },
+      "cfg": {
+        "type": "CPT",
+        "idInterne": "f00dd.1",
+        "profil": "SIGNATURE LCR WEATHER STATION",
+        "sousType": "MTO_LCR",
+        "eqtActif": "1\\\\Actif",
+        "description": "51+000 km",
+        "mesures": {
+          "pool": [
+            {
+              "value": "_2",
+              "_text": null,
+              "channels": [
+                {
+                  "value": "_1",
+                  "_text": "Channel 1",
+                  "natures": [
+                    {
+                      "value": "tSR",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Am00",
+                            "mesureId": {
+                              "_text": "2/1/tSR/360/Am00"
+                            },
+                            "type": {
+                              "_text": "1TS_MTCE1"
+                            },
+                            "libelle": {
+                              "_text": "Pavement temperature Direction 1"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "kSR",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Cm00",
+                            "mesureId": {
+                              "_text": "2/1/kSR/360/Cm00"
+                            },
+                            "type": {
+                              "_text": "1ES_MYLE0"
+                            },
+                            "libelle": {
+                              "_text": "Felület állapota"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "tS1",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Am00",
+                            "mesureId": {
+                              "_text": "2/1/tS1/360/Am00"
+                            },
+                            "type": {
+                              "_text": "1TCCMTCE1"
+                            },
+                            "libelle": {
+                              "_text": "Freezing temperature"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "HWR",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Am00",
+                            "mesureId": {
+                              "_text": "2/1/HWR/360/Am00"
+                            },
+                            "type": {
+                              "_text": "1HW_MMmE0"
+                            },
+                            "libelle": {
+                              "_text": "Water Film Height"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "value": "z",
+                  "_text": "Channel z",
+                  "natures": [
+                    {
+                      "value": "tAM",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Am00",
+                            "mesureId": {
+                              "_text": "2/z/tAM/360/Am00"
+                            },
+                            "type": {
+                              "_text": "1TA_MTCE1"
+                            },
+                            "libelle": {
+                              "_text": "Air temperature"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "uAM",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Am00",
+                            "mesureId": {
+                              "_text": "2/z/uAM/360/Am00"
+                            },
+                            "type": {
+                              "_text": "1HG_MP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Air humidity"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "tA1",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Am00",
+                            "mesureId": {
+                              "_text": "2/z/tA1/360/Am00"
+                            },
+                            "type": {
+                              "_text": "1PTRMTCE1"
+                            },
+                            "libelle": {
+                              "_text": "dew-point temperature"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "hMR",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Cm00",
+                            "mesureId": {
+                              "_text": "2/z/hMR/360/Cm00"
+                            },
+                            "type": {
+                              "_text": "1hM_MMmE0"
+                            },
+                            "libelle": {
+                              "_text": "Precipitation Height"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "sAR",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Xm00",
+                            "mesureId": {
+                              "_text": "2/z/sAR/360/Xm00"
+                            },
+                            "type": {
+                              "_text": "1VV_XKME0"
+                            },
+                            "libelle": {
+                              "_text": "Wind Speed (max. 10Min)"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "nMR",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Cm00",
+                            "mesureId": {
+                              "_text": "2/z/nMR/360/Cm00"
+                            },
+                            "type": {
+                              "_text": "1PR_MYLE0"
+                            },
+                            "libelle": {
+                              "_text": "Type of Precipitation"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "kMR",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Cm00",
+                            "mesureId": {
+                              "_text": "2/z/kMR/360/Cm00"
+                            },
+                            "type": {
+                              "_text": "1PRQMY1E0"
+                            },
+                            "libelle": {
+                              "_text": "Intensity of precipitation"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "dAR",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Am00",
+                            "mesureId": {
+                              "_text": "2/z/dAR/360/Am00"
+                            },
+                            "type": {
+                              "_text": "1DV_MDDE0"
+                            },
+                            "libelle": {
+                              "_text": "Wind direction"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "pAM",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Am00",
+                            "mesureId": {
+                              "_text": "2/z/pAM/360/Am00"
+                            },
+                            "type": {
+                              "_text": "1PA_MP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Atmospheric pressure"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "value": "_9",
+                  "_text": "Channel 9",
+                  "natures": [
+                    {
+                      "value": "TtAM",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "T000",
+                            "mesureId": {
+                              "_text": "2/9/TtAM/360/T000"
+                            },
+                            "type": {
+                              "_text": "1TA_MYCE1"
+                            },
+                            "libelle": {
+                              "_text": "Air temperature Trend"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TuAM",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "T000",
+                            "mesureId": {
+                              "_text": "2/9/TuAM/360/T000"
+                            },
+                            "type": {
+                              "_text": "1HG_MY_E0"
+                            },
+                            "libelle": {
+                              "_text": "Air humidity Trend"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TtS1",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "T000",
+                            "mesureId": {
+                              "_text": "2/9/TtS1/360/T000"
+                            },
+                            "type": {
+                              "_text": "1TCCMYCE1"
+                            },
+                            "libelle": {
+                              "_text": "Pavement structure temperature Trend"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TsAR",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "T000",
+                            "mesureId": {
+                              "_text": "2/9/TsAR/360/T000"
+                            },
+                            "type": {
+                              "_text": "1VV_MYME0"
+                            },
+                            "libelle": {
+                              "_text": "Wind Speed (Avg. 10min) Trend"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TpAM",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "T000",
+                            "mesureId": {
+                              "_text": "2/9/TpAM/360/T000"
+                            },
+                            "type": {
+                              "_text": "1PA_MY_E0"
+                            },
+                            "libelle": {
+                              "_text": "Atmospheric pressure Trend"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TtSR",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "T000",
+                            "mesureId": {
+                              "_text": "2/9/TtSR/360/T000"
+                            },
+                            "type": {
+                              "_text": "1TS_MYCE1"
+                            },
+                            "libelle": {
+                              "_text": "Pavement temperature Trend"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "Alr01",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "A000",
+                            "mesureId": {
+                              "_text": "2/9/Alr01/360/A000"
+                            },
+                            "type": {
+                              "_text": "1AL_MY1E0"
+                            },
+                            "libelle": {
+                              "_text": "Winter conditions warning"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "Alr02",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "A000",
+                            "mesureId": {
+                              "_text": "2/9/Alr02/360/A000"
+                            },
+                            "type": {
+                              "_text": "1AL2MY1E0"
+                            },
+                            "libelle": {
+                              "_text": "Winter precipitations warning"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "value": "_126",
+                  "_text": "Channel Tech",
+                  "natures": [
+                    {
+                      "value": "COM",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/~/COM/360/0000"
+                            },
+                            "type": {
+                              "_text": "1ICIKA_B0"
+                            },
+                            "libelle": {
+                              "_text": "Defautl Communication"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "GAT",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/~/GAT/360/0000"
+                            },
+                            "type": {
+                              "_text": "1OP_KA_B0"
+                            },
+                            "libelle": {
+                              "_text": "Gate Open"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "EDF",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/~/EDF/360/0000"
+                            },
+                            "type": {
+                              "_text": "1AEAKA_B0"
+                            },
+                            "libelle": {
+                              "_text": "Power Default"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "titre": "PR 72+020 (Calcul) (WS_72_020)",
+      "DATEINFO": {
+        "value": "2019-04-16T18:46:35+02:00",
+        "type": "date"
+      },
+      "SOURCE": {
+        "value": "mivisu",
+        "type": "string"
+      },
+      "CONTEXTE": {
+        "value": "CXTMVS_MES_STA",
+        "type": "string"
+      },
+      "DESCRIPTION": null,
+      "TYPE ": {
+        "value": "MVS_EQT_MES",
+        "type": "string"
+      },
+      "SSTYPE": {
+        "value": "SIGNATURE LCR WEATHER STATION",
+        "type": "string"
+      },
+      "ID": {
+        "value": "WS_72_020",
+        "type": "string"
+      },
+      "TITRE": {
+        "value": "72+020 Km (WS_72_020)",
+        "type": "string"
+      },
+      "DATEUPDATE": {
+        "value": "2019-08-28T10:50:07+02:00",
+        "type": "date"
+      },
+      "DATEFIN": {
+        "value": null,
+        "type": "date"
+      },
+      "cfg": {
+        "type": "CPT",
+        "idInterne": "f00dd.2",
+        "profil": "SIGNATURE LCR WEATHER STATION",
+        "sousType": "MTO_LCR",
+        "eqtActif": "1\\\\Actif",
+        "description": "72+020 Km",
+        "mesures": {
+          "pool": [
+            {
+              "value": "_2",
+              "_text": null,
+              "channels": [
+                {
+                  "value": "_1",
+                  "_text": "Channel 1",
+                  "natures": [
+                    {
+                      "value": "tSR",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Am00",
+                            "mesureId": {
+                              "_text": "2/1/tSR/360/Am00"
+                            },
+                            "type": {
+                              "_text": "1TS_MTCE1"
+                            },
+                            "libelle": {
+                              "_text": "Pavement temperature Direction 1"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "kSR",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Cm00",
+                            "mesureId": {
+                              "_text": "2/1/kSR/360/Cm00"
+                            },
+                            "type": {
+                              "_text": "1ES_MYLE0"
+                            },
+                            "libelle": {
+                              "_text": "Felület állapota"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "tS1",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Am00",
+                            "mesureId": {
+                              "_text": "2/1/tS1/360/Am00"
+                            },
+                            "type": {
+                              "_text": "1TCCMTCE1"
+                            },
+                            "libelle": {
+                              "_text": "Freezing temperature"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "HWR",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Am00",
+                            "mesureId": {
+                              "_text": "2/1/HWR/360/Am00"
+                            },
+                            "type": {
+                              "_text": "1HW_MMmE0"
+                            },
+                            "libelle": {
+                              "_text": "Water Film Height"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "value": "z",
+                  "_text": "Channel z",
+                  "natures": [
+                    {
+                      "value": "tAM",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Am00",
+                            "mesureId": {
+                              "_text": "2/z/tAM/360/Am00"
+                            },
+                            "type": {
+                              "_text": "1TA_MTCE1"
+                            },
+                            "libelle": {
+                              "_text": "Air temperature"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "uAM",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Am00",
+                            "mesureId": {
+                              "_text": "2/z/uAM/360/Am00"
+                            },
+                            "type": {
+                              "_text": "1HG_MP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Air humidity"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "tA1",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Am00",
+                            "mesureId": {
+                              "_text": "2/z/tA1/360/Am00"
+                            },
+                            "type": {
+                              "_text": "1PTRMTCE1"
+                            },
+                            "libelle": {
+                              "_text": "dew-point temperature"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "hMR",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Cm00",
+                            "mesureId": {
+                              "_text": "2/z/hMR/360/Cm00"
+                            },
+                            "type": {
+                              "_text": "1hM_MMmE0"
+                            },
+                            "libelle": {
+                              "_text": "Precipitation Height"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "sAR",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Xm00",
+                            "mesureId": {
+                              "_text": "2/z/sAR/360/Xm00"
+                            },
+                            "type": {
+                              "_text": "1VV_XKME0"
+                            },
+                            "libelle": {
+                              "_text": "Wind Speed (max. 10Min)"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "nMR",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Cm00",
+                            "mesureId": {
+                              "_text": "2/z/nMR/360/Cm00"
+                            },
+                            "type": {
+                              "_text": "1PR_MYLE0"
+                            },
+                            "libelle": {
+                              "_text": "Type of Precipitation"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "kMR",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Cm00",
+                            "mesureId": {
+                              "_text": "2/z/kMR/360/Cm00"
+                            },
+                            "type": {
+                              "_text": "1PRQMY1E0"
+                            },
+                            "libelle": {
+                              "_text": "Intensity of precipitation"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "dAR",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Am00",
+                            "mesureId": {
+                              "_text": "2/z/dAR/360/Am00"
+                            },
+                            "type": {
+                              "_text": "1DV_MDDE0"
+                            },
+                            "libelle": {
+                              "_text": "Wind direction"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "pAM",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Am00",
+                            "mesureId": {
+                              "_text": "2/z/pAM/360/Am00"
+                            },
+                            "type": {
+                              "_text": "1PA_MP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Atmospheric pressure"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "value": "_9",
+                  "_text": "Channel 9",
+                  "natures": [
+                    {
+                      "value": "TtAM",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "T000",
+                            "mesureId": {
+                              "_text": "2/9/TtAM/360/T000"
+                            },
+                            "type": {
+                              "_text": "1TA_MYCE1"
+                            },
+                            "libelle": {
+                              "_text": "Air temperature Trend"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TuAM",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "T000",
+                            "mesureId": {
+                              "_text": "2/9/TuAM/360/T000"
+                            },
+                            "type": {
+                              "_text": "1HG_MY_E0"
+                            },
+                            "libelle": {
+                              "_text": "Air humidity Trend"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TtS1",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "T000",
+                            "mesureId": {
+                              "_text": "2/9/TtS1/360/T000"
+                            },
+                            "type": {
+                              "_text": "1TCCMYCE1"
+                            },
+                            "libelle": {
+                              "_text": "Pavement structure temperature Trend"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TsAR",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "T000",
+                            "mesureId": {
+                              "_text": "2/9/TsAR/360/T000"
+                            },
+                            "type": {
+                              "_text": "1VV_MYME0"
+                            },
+                            "libelle": {
+                              "_text": "Wind Speed (Avg. 10min) Trend"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TpAM",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "T000",
+                            "mesureId": {
+                              "_text": "2/9/TpAM/360/T000"
+                            },
+                            "type": {
+                              "_text": "1PA_MY_E0"
+                            },
+                            "libelle": {
+                              "_text": "Atmospheric pressure Trend"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TtSR",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "T000",
+                            "mesureId": {
+                              "_text": "2/9/TtSR/360/T000"
+                            },
+                            "type": {
+                              "_text": "1TS_MYCE1"
+                            },
+                            "libelle": {
+                              "_text": "Pavement temperature Trend"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "Alr01",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "A000",
+                            "mesureId": {
+                              "_text": "2/9/Alr01/360/A000"
+                            },
+                            "type": {
+                              "_text": "1AL_MY1E0"
+                            },
+                            "libelle": {
+                              "_text": "Winter conditions warning"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "Alr02",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "A000",
+                            "mesureId": {
+                              "_text": "2/9/Alr02/360/A000"
+                            },
+                            "type": {
+                              "_text": "1AL2MY1E0"
+                            },
+                            "libelle": {
+                              "_text": "Winter precipitations warning"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "value": "_126",
+                  "_text": "Channel Tech",
+                  "natures": [
+                    {
+                      "value": "COM",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/~/COM/360/0000"
+                            },
+                            "type": {
+                              "_text": "1ICIKA_B0"
+                            },
+                            "libelle": {
+                              "_text": "Defautl Communication"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "GAT",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/~/GAT/360/0000"
+                            },
+                            "type": {
+                              "_text": "1OP_KA_B0"
+                            },
+                            "libelle": {
+                              "_text": "Gate Open"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "EDF",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/~/EDF/360/0000"
+                            },
+                            "type": {
+                              "_text": "1AEAKA_B0"
+                            },
+                            "libelle": {
+                              "_text": "Power Default"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "titre": "PR 83+000 (Calcul) (WS_83_000)",
+      "DATEINFO": {
+        "value": "2019-04-16T18:46:35+02:00",
+        "type": "date"
+      },
+      "SOURCE": {
+        "value": "mivisu",
+        "type": "string"
+      },
+      "CONTEXTE": {
+        "value": "CXTMVS_MES_STA",
+        "type": "string"
+      },
+      "DESCRIPTION": null,
+      "TYPE ": {
+        "value": "MVS_EQT_MES",
+        "type": "string"
+      },
+      "SSTYPE": {
+        "value": "SIGNATURE LCR WEATHER STATION",
+        "type": "string"
+      },
+      "ID": {
+        "value": "WS_83_000",
+        "type": "string"
+      },
+      "TITRE": {
+        "value": "83+000 Km (WS_83_000)",
+        "type": "string"
+      },
+      "DATEUPDATE": {
+        "value": "2019-08-28T10:50:07+02:00",
+        "type": "date"
+      },
+      "DATEFIN": {
+        "value": null,
+        "type": "date"
+      },
+      "cfg": {
+        "type": "CPT",
+        "idInterne": "f00dd.3",
+        "profil": "SIGNATURE LCR WEATHER STATION",
+        "sousType": "MTO_LCR",
+        "eqtActif": "1\\\\Actif",
+        "description": "83+000 Km",
+        "mesures": {
+          "pool": [
+            {
+              "value": "_2",
+              "_text": null,
+              "channels": [
+                {
+                  "value": "_1",
+                  "_text": "Channel 1",
+                  "natures": [
+                    {
+                      "value": "tSR",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Am00",
+                            "mesureId": {
+                              "_text": "2/1/tSR/360/Am00"
+                            },
+                            "type": {
+                              "_text": "1TS_MTCE1"
+                            },
+                            "libelle": {
+                              "_text": "Pavement temperature Direction 1"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "kSR",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Cm00",
+                            "mesureId": {
+                              "_text": "2/1/kSR/360/Cm00"
+                            },
+                            "type": {
+                              "_text": "1ES_MYLE0"
+                            },
+                            "libelle": {
+                              "_text": "Felület állapota"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "tS1",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Am00",
+                            "mesureId": {
+                              "_text": "2/1/tS1/360/Am00"
+                            },
+                            "type": {
+                              "_text": "1TCCMTCE1"
+                            },
+                            "libelle": {
+                              "_text": "Freezing temperature"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "HWR",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Am00",
+                            "mesureId": {
+                              "_text": "2/1/HWR/360/Am00"
+                            },
+                            "type": {
+                              "_text": "1HW_MMmE0"
+                            },
+                            "libelle": {
+                              "_text": "Water Film Height"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "value": "z",
+                  "_text": "Channel z",
+                  "natures": [
+                    {
+                      "value": "tAM",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Am00",
+                            "mesureId": {
+                              "_text": "2/z/tAM/360/Am00"
+                            },
+                            "type": {
+                              "_text": "1TA_MTCE1"
+                            },
+                            "libelle": {
+                              "_text": "Air temperature"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "uAM",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Am00",
+                            "mesureId": {
+                              "_text": "2/z/uAM/360/Am00"
+                            },
+                            "type": {
+                              "_text": "1HG_MP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Air humidity"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "tA1",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Am00",
+                            "mesureId": {
+                              "_text": "2/z/tA1/360/Am00"
+                            },
+                            "type": {
+                              "_text": "1PTRMTCE1"
+                            },
+                            "libelle": {
+                              "_text": "dew-point temperature"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "hMR",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Cm00",
+                            "mesureId": {
+                              "_text": "2/z/hMR/360/Cm00"
+                            },
+                            "type": {
+                              "_text": "1hM_MMmE0"
+                            },
+                            "libelle": {
+                              "_text": "Precipitation Height"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "sAR",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Xm00",
+                            "mesureId": {
+                              "_text": "2/z/sAR/360/Xm00"
+                            },
+                            "type": {
+                              "_text": "1VV_XKME0"
+                            },
+                            "libelle": {
+                              "_text": "Wind Speed (max. 10Min)"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "nMR",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Cm00",
+                            "mesureId": {
+                              "_text": "2/z/nMR/360/Cm00"
+                            },
+                            "type": {
+                              "_text": "1PR_MYLE0"
+                            },
+                            "libelle": {
+                              "_text": "Type of Precipitation"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "kMR",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Cm00",
+                            "mesureId": {
+                              "_text": "2/z/kMR/360/Cm00"
+                            },
+                            "type": {
+                              "_text": "1PRQMY1E0"
+                            },
+                            "libelle": {
+                              "_text": "Intensity of precipitation"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "dAR",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Am00",
+                            "mesureId": {
+                              "_text": "2/z/dAR/360/Am00"
+                            },
+                            "type": {
+                              "_text": "1DV_MDDE0"
+                            },
+                            "libelle": {
+                              "_text": "Wind direction"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "pAM",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Am00",
+                            "mesureId": {
+                              "_text": "2/z/pAM/360/Am00"
+                            },
+                            "type": {
+                              "_text": "1PA_MP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Atmospheric pressure"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "value": "_9",
+                  "_text": "Channel 9",
+                  "natures": [
+                    {
+                      "value": "TtAM",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "T000",
+                            "mesureId": {
+                              "_text": "2/9/TtAM/360/T000"
+                            },
+                            "type": {
+                              "_text": "1TA_MYCE1"
+                            },
+                            "libelle": {
+                              "_text": "Air temperature Trend"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TuAM",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "T000",
+                            "mesureId": {
+                              "_text": "2/9/TuAM/360/T000"
+                            },
+                            "type": {
+                              "_text": "1HG_MY_E0"
+                            },
+                            "libelle": {
+                              "_text": "Air humidity Trend"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TtS1",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "T000",
+                            "mesureId": {
+                              "_text": "2/9/TtS1/360/T000"
+                            },
+                            "type": {
+                              "_text": "1TCCMYCE1"
+                            },
+                            "libelle": {
+                              "_text": "Pavement structure temperature Trend"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TsAR",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "T000",
+                            "mesureId": {
+                              "_text": "2/9/TsAR/360/T000"
+                            },
+                            "type": {
+                              "_text": "1VV_MYME0"
+                            },
+                            "libelle": {
+                              "_text": "Wind Speed (Avg. 10min) Trend"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TpAM",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "T000",
+                            "mesureId": {
+                              "_text": "2/9/TpAM/360/T000"
+                            },
+                            "type": {
+                              "_text": "1PA_MY_E0"
+                            },
+                            "libelle": {
+                              "_text": "Atmospheric pressure Trend"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TtSR",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "T000",
+                            "mesureId": {
+                              "_text": "2/9/TtSR/360/T000"
+                            },
+                            "type": {
+                              "_text": "1TS_MYCE1"
+                            },
+                            "libelle": {
+                              "_text": "Pavement temperature Trend"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "Alr01",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "A000",
+                            "mesureId": {
+                              "_text": "2/9/Alr01/360/A000"
+                            },
+                            "type": {
+                              "_text": "1AL_MY1E0"
+                            },
+                            "libelle": {
+                              "_text": "Winter conditions warning"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "Alr02",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "A000",
+                            "mesureId": {
+                              "_text": "2/9/Alr02/360/A000"
+                            },
+                            "type": {
+                              "_text": "1AL2MY1E0"
+                            },
+                            "libelle": {
+                              "_text": "Winter precipitations warning"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "value": "_126",
+                  "_text": "Channel Tech",
+                  "natures": [
+                    {
+                      "value": "COM",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/~/COM/360/0000"
+                            },
+                            "type": {
+                              "_text": "1ICIKA_B0"
+                            },
+                            "libelle": {
+                              "_text": "Defautl Communication"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "GAT",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/~/GAT/360/0000"
+                            },
+                            "type": {
+                              "_text": "1OP_KA_B0"
+                            },
+                            "libelle": {
+                              "_text": "Gate Open"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "EDF",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/~/EDF/360/0000"
+                            },
+                            "type": {
+                              "_text": "1AEAKA_B0"
+                            },
+                            "libelle": {
+                              "_text": "Power Default"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "titre": "PR 92+845 (Calcul) (WS_92_845)",
+      "DATEINFO": {
+        "value": "2019-04-16T18:46:35+02:00",
+        "type": "date"
+      },
+      "SOURCE": {
+        "value": "mivisu",
+        "type": "string"
+      },
+      "CONTEXTE": {
+        "value": "CXTMVS_MES_STA",
+        "type": "string"
+      },
+      "DESCRIPTION": null,
+      "TYPE ": {
+        "value": "MVS_EQT_MES",
+        "type": "string"
+      },
+      "SSTYPE": {
+        "value": "SIGNATURE LCR WEATHER STATION",
+        "type": "string"
+      },
+      "ID": {
+        "value": "WS_92_845",
+        "type": "string"
+      },
+      "TITRE": {
+        "value": "92+845 Km (WS_92_845)",
+        "type": "string"
+      },
+      "DATEUPDATE": {
+        "value": "2019-08-28T10:50:07+02:00",
+        "type": "date"
+      },
+      "DATEFIN": {
+        "value": null,
+        "type": "date"
+      },
+      "cfg": {
+        "type": "CPT",
+        "idInterne": "f00dd.4",
+        "profil": "SIGNATURE LCR WEATHER STATION",
+        "sousType": "MTO_LCR",
+        "eqtActif": "1\\\\Actif",
+        "description": "92+845 Km",
+        "mesures": {
+          "pool": [
+            {
+              "value": "_2",
+              "_text": null,
+              "channels": [
+                {
+                  "value": "_1",
+                  "_text": "Channel 1",
+                  "natures": [
+                    {
+                      "value": "tSR",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Am00",
+                            "mesureId": {
+                              "_text": "2/1/tSR/360/Am00"
+                            },
+                            "type": {
+                              "_text": "1TS_MTCE1"
+                            },
+                            "libelle": {
+                              "_text": "Pavement temperature Direction 1"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "kSR",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Cm00",
+                            "mesureId": {
+                              "_text": "2/1/kSR/360/Cm00"
+                            },
+                            "type": {
+                              "_text": "1ES_MYLE0"
+                            },
+                            "libelle": {
+                              "_text": "Felület állapota"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "tS1",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Am00",
+                            "mesureId": {
+                              "_text": "2/1/tS1/360/Am00"
+                            },
+                            "type": {
+                              "_text": "1TCCMTCE1"
+                            },
+                            "libelle": {
+                              "_text": "Freezing temperature"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "HWR",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Am00",
+                            "mesureId": {
+                              "_text": "2/1/HWR/360/Am00"
+                            },
+                            "type": {
+                              "_text": "1HW_MMmE0"
+                            },
+                            "libelle": {
+                              "_text": "Water Film Height"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "value": "z",
+                  "_text": "Channel z",
+                  "natures": [
+                    {
+                      "value": "tAM",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Am00",
+                            "mesureId": {
+                              "_text": "2/z/tAM/360/Am00"
+                            },
+                            "type": {
+                              "_text": "1TA_MTCE1"
+                            },
+                            "libelle": {
+                              "_text": "Air temperature"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "uAM",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Am00",
+                            "mesureId": {
+                              "_text": "2/z/uAM/360/Am00"
+                            },
+                            "type": {
+                              "_text": "1HG_MP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Air humidity"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "tA1",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Am00",
+                            "mesureId": {
+                              "_text": "2/z/tA1/360/Am00"
+                            },
+                            "type": {
+                              "_text": "1PTRMTCE1"
+                            },
+                            "libelle": {
+                              "_text": "dew-point temperature"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "hMR",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Cm00",
+                            "mesureId": {
+                              "_text": "2/z/hMR/360/Cm00"
+                            },
+                            "type": {
+                              "_text": "1hM_MMmE0"
+                            },
+                            "libelle": {
+                              "_text": "Precipitation Height"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "sAR",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Xm00",
+                            "mesureId": {
+                              "_text": "2/z/sAR/360/Xm00"
+                            },
+                            "type": {
+                              "_text": "1VV_XKME0"
+                            },
+                            "libelle": {
+                              "_text": "Wind Speed (max. 10Min)"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "nMR",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Cm00",
+                            "mesureId": {
+                              "_text": "2/z/nMR/360/Cm00"
+                            },
+                            "type": {
+                              "_text": "1PR_MYLE0"
+                            },
+                            "libelle": {
+                              "_text": "Type of Precipitation"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "kMR",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Cm00",
+                            "mesureId": {
+                              "_text": "2/z/kMR/360/Cm00"
+                            },
+                            "type": {
+                              "_text": "1PRQMY1E0"
+                            },
+                            "libelle": {
+                              "_text": "Intensity of precipitation"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "dAR",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Am00",
+                            "mesureId": {
+                              "_text": "2/z/dAR/360/Am00"
+                            },
+                            "type": {
+                              "_text": "1DV_MDDE0"
+                            },
+                            "libelle": {
+                              "_text": "Wind direction"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "pAM",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "Am00",
+                            "mesureId": {
+                              "_text": "2/z/pAM/360/Am00"
+                            },
+                            "type": {
+                              "_text": "1PA_MP_E0"
+                            },
+                            "libelle": {
+                              "_text": "Atmospheric pressure"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "value": "_9",
+                  "_text": "Channel 9",
+                  "natures": [
+                    {
+                      "value": "TtAM",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "T000",
+                            "mesureId": {
+                              "_text": "2/9/TtAM/360/T000"
+                            },
+                            "type": {
+                              "_text": "1TA_MYCE1"
+                            },
+                            "libelle": {
+                              "_text": "Air temperature Trend"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TuAM",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "T000",
+                            "mesureId": {
+                              "_text": "2/9/TuAM/360/T000"
+                            },
+                            "type": {
+                              "_text": "1HG_MY_E0"
+                            },
+                            "libelle": {
+                              "_text": "Air humidity Trend"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TtS1",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "T000",
+                            "mesureId": {
+                              "_text": "2/9/TtS1/360/T000"
+                            },
+                            "type": {
+                              "_text": "1TCCMYCE1"
+                            },
+                            "libelle": {
+                              "_text": "Pavement structure temperature Trend"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TsAR",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "T000",
+                            "mesureId": {
+                              "_text": "2/9/TsAR/360/T000"
+                            },
+                            "type": {
+                              "_text": "1VV_MYME0"
+                            },
+                            "libelle": {
+                              "_text": "Wind Speed (Avg. 10min) Trend"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TpAM",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "T000",
+                            "mesureId": {
+                              "_text": "2/9/TpAM/360/T000"
+                            },
+                            "type": {
+                              "_text": "1PA_MY_E0"
+                            },
+                            "libelle": {
+                              "_text": "Atmospheric pressure Trend"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "TtSR",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "T000",
+                            "mesureId": {
+                              "_text": "2/9/TtSR/360/T000"
+                            },
+                            "type": {
+                              "_text": "1TS_MYCE1"
+                            },
+                            "libelle": {
+                              "_text": "Pavement temperature Trend"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "Alr01",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "A000",
+                            "mesureId": {
+                              "_text": "2/9/Alr01/360/A000"
+                            },
+                            "type": {
+                              "_text": "1AL_MY1E0"
+                            },
+                            "libelle": {
+                              "_text": "Winter conditions warning"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "Alr02",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "A000",
+                            "mesureId": {
+                              "_text": "2/9/Alr02/360/A000"
+                            },
+                            "type": {
+                              "_text": "1AL2MY1E0"
+                            },
+                            "libelle": {
+                              "_text": "Winter precipitations warning"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "value": "_126",
+                  "_text": "Channel Tech",
+                  "natures": [
+                    {
+                      "value": "COM",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/~/COM/360/0000"
+                            },
+                            "type": {
+                              "_text": "1ICIKA_B0"
+                            },
+                            "libelle": {
+                              "_text": "Defautl Communication"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "GAT",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/~/GAT/360/0000"
+                            },
+                            "type": {
+                              "_text": "1OP_KA_B0"
+                            },
+                            "libelle": {
+                              "_text": "Gate Open"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "value": "EDF",
+                      "period": [
+                        {
+                          "value": "_360",
+                          "class_mesure": {
+                            "value": "_0000",
+                            "mesureId": {
+                              "_text": "2/~/EDF/360/0000"
+                            },
+                            "type": {
+                              "_text": "1AEAKA_B0"
+                            },
+                            "libelle": {
+                              "_text": "Power Default"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "requestId": "12345",
+  "deploymentId": 1
+}

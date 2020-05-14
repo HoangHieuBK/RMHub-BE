@@ -1,0 +1,294 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: nginx-static-sshpubkey
+  namespace: custom-apps
+type: Opaque
+data:
+  authorized_keys: <PUB_KEYS_IN_BASE64_ENCODE>
+
+---
+
+# apiVersion: v1
+# kind: PersistentVolume
+# metadata:
+#   name: nginx-html-volume
+#   labels:
+#     type: local
+# spec:
+#   storageClassName: nginx
+#   capacity:
+#     storage: 500Mi
+#   accessModes:
+#     - ReadWriteOnce
+#   hostPath:
+#     path: "/tmp/nginx/html"
+
+# ---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: nginx-static-pvc
+  namespace: custom-apps
+spec:
+#  storageClassName: nginx
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 500Mi
+
+---
+
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: nginx-static-config
+  namespace: custom-apps
+data:
+  nginx.conf: |
+    user  nginx;
+    worker_processes  1;
+
+    error_log  /var/log/nginx/error.log warn;
+    pid        /var/run/nginx.pid;
+
+
+    events {
+      worker_connections  1024;
+    }
+
+
+    http {
+      default_type  application/octet-stream;
+      include    mime.types;
+
+      log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
+                        '$status $body_bytes_sent "$http_referer" '
+                        '"$http_user_agent" "$http_x_forwarded_for"';
+
+      access_log  /var/log/nginx/access.log  main;
+
+      sendfile        on;
+      #tcp_nopush     on;
+
+      keepalive_timeout  65;
+
+      #gzip  on;
+      server {
+        listen   80 default;
+        server_name  localhost;
+
+        location / {
+                root   /usr/share/nginx/html;
+                index  index.html index.htm;
+                autoindex on;
+        }
+      }
+    }
+
+  mime.types: |
+    types {
+
+      # Audio
+      audio/midi                            mid midi kar;
+      audio/mp4                             aac f4a f4b m4a;
+      audio/mpeg                            mp3;
+      audio/ogg                             oga ogg;
+      audio/x-realaudio                     ra;
+      audio/x-wav                           wav;
+
+      # Images
+      image/bmp                             bmp;
+      image/gif                             gif;
+      image/jpeg                            jpeg jpg;
+      image/png                             png;
+      image/tiff                            tif tiff;
+      image/vnd.wap.wbmp                    wbmp;
+      image/webp                            webp;
+      image/x-icon                          ico cur;
+      image/x-jng                           jng;
+
+      # JavaScript
+      application/javascript                js;
+      application/json                      json;
+
+      # Manifest files
+      application/x-web-app-manifest+json   webapp;
+      text/cache-manifest                   manifest appcache;
+
+      # Microsoft Office
+      application/msword                                                         doc;
+      application/vnd.ms-excel                                                   xls;
+      application/vnd.ms-powerpoint                                              ppt;
+      application/vnd.openxmlformats-officedocument.wordprocessingml.document    docx;
+      application/vnd.openxmlformats-officedocument.spreadsheetml.sheet          xlsx;
+      application/vnd.openxmlformats-officedocument.presentationml.presentation  pptx;
+
+      # Video
+      video/3gpp                            3gpp 3gp;
+      video/mp4                             mp4 m4v f4v f4p;
+      video/mpeg                            mpeg mpg;
+      video/ogg                             ogv;
+      video/quicktime                       mov;
+      video/webm                            webm;
+      video/x-flv                           flv;
+      video/x-mng                           mng;
+      video/x-ms-asf                        asx asf;
+      video/x-ms-wmv                        wmv;
+      video/x-msvideo                       avi;
+
+      # Web feeds
+      application/xml                       atom rdf rss xml;
+
+      # Web fonts
+      application/font-woff                 woff;
+      application/vnd.ms-fontobject         eot;
+      application/x-font-ttf                ttc ttf;
+      font/opentype                         otf;
+      image/svg+xml                         svg svgz;
+
+      # Other
+      application/java-archive              jar war ear;
+      application/mac-binhex40              hqx;
+      application/pdf                       pdf;
+      application/postscript                ps eps ai;
+      application/rtf                       rtf;
+      application/vnd.wap.wmlc              wmlc;
+      application/xhtml+xml                 xhtml;
+      application/vnd.google-earth.kml+xml  kml;
+      application/vnd.google-earth.kmz      kmz;
+      application/x-7z-compressed           7z;
+      application/x-chrome-extension        crx;
+      application/x-opera-extension         oex;
+      application/x-xpinstall               xpi;
+      application/x-cocoa                   cco;
+      application/x-java-archive-diff       jardiff;
+      application/x-java-jnlp-file          jnlp;
+      application/x-makeself                run;
+      application/x-perl                    pl pm;
+      application/x-pilot                   prc pdb;
+      application/x-rar-compressed          rar;
+      application/x-redhat-package-manager  rpm;
+      application/x-sea                     sea;
+      application/x-shockwave-flash         swf;
+      application/x-stuffit                 sit;
+      application/x-tcl                     tcl tk;
+      application/x-x509-ca-cert            der pem crt;
+      application/x-bittorrent              torrent;
+      application/zip                       zip;
+
+      application/octet-stream              bin exe dll;
+      application/octet-stream              deb;
+      application/octet-stream              dmg;
+      application/octet-stream              iso img;
+      application/octet-stream              msi msp msm;
+      application/octet-stream              safariextz;
+
+      text/css                              css;
+      text/html                             html htm shtml;
+      text/mathml                           mml;
+      text/plain                            txt;
+      text/vnd.sun.j2me.app-descriptor      jad;
+      text/vnd.wap.wml                      wml;
+      text/vtt                              vtt;
+      text/x-component                      htc;
+      text/x-vcard                          vcf;
+    }
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-static-deployment
+  namespace: custom-apps
+  labels:
+    app: nginx-static-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx-static-deployment
+  template:
+    metadata:
+      labels:
+        app: nginx-static-deployment
+    spec:
+      containers:
+      - image: "nginx:1.17.1"
+        name: nginx
+        ports:
+        - containerPort: 80
+          name: http
+        volumeMounts:
+        - name: nginx-static-pages
+          mountPath: /usr/share/nginx/html
+          readOnly: true
+        - name: nginx-static-config
+          mountPath: /etc/nginx/
+      - image: eu.gcr.io/aerial-utility-244114/leannet-sshd:0.1
+        # imagePullPolicy: Never
+        name: sshd
+        ports:
+        - containerPort: 22
+          name: ssh
+        volumeMounts:
+        - name: nginx-static-pages
+          mountPath: /usr/share/nginx/html
+        - name: nginx-static-sshpubkey
+          mountPath: /root/.ssh/authorized_keys
+          subPath: authorized_keys
+      volumes:
+        - name: nginx-static-config
+          configMap:
+            name: nginx-static-config
+        - name: nginx-static-sshpubkey
+          secret:
+            secretName: nginx-static-sshpubkey
+            defaultMode: 384
+        - name: nginx-static-pages
+          persistentVolumeClaim:
+            claimName: nginx-static-pvc
+      restartPolicy: Always
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-web-service
+  namespace: custom-apps
+  labels:
+    run: nginx-web-service
+spec:
+  ports:
+  - name: http
+    port: 80
+    targetPort: http
+    protocol: TCP
+  - name: ssh
+    port: 22
+    targetPort: ssh
+    protocol: TCP
+  selector:
+    app: nginx-static-deployment
+
+---
+
+apiVersion: extensions/v1beta1
+# apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: nginx-static-ingress
+  namespace: custom-apps
+  annotations:
+    kubernetes.io/ingress.class: nginx
+spec:
+  rules:
+    - host: "ut-results.<HOST_BASE>"
+      http:
+        paths:
+          - path: /
+            backend:
+               serviceName: nginx-web
+               servicePort: 80

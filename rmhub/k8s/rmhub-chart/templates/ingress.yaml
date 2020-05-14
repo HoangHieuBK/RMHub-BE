@@ -1,0 +1,72 @@
+apiVersion: extensions/v1beta1
+# apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: {{ .Values.ingress.name }}
+  annotations:
+    kubernetes.io/ingress.class: nginx
+spec:
+  rules:
+    - host: "{{ .Values.kafka_manager.serviceName }}.{{ .Values.ingress.host }}"
+      http:
+        paths:
+          - path: /
+            backend:
+               serviceName: {{ .Values.kafka_manager.serviceName }}
+               servicePort: {{ .Values.kafka_manager.port }}
+    - host: "{{ .Values.kafdrop.serviceName }}.{{ .Values.ingress.host }}"
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: {{ .Values.kafdrop.serviceName }}
+              servicePort: {{ .Values.kafdrop.port }}
+    - host: "{{ .Values.pgadmin.serviceName }}.{{ .Values.ingress.host }}"
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: {{ .Values.pgadmin.serviceName }}
+              servicePort: {{ .Values.pgadmin.port }}
+    - host: "{{ .Values.mivisu_connector_ssilm.serviceName }}.{{ .Values.ingress.host }}"
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: {{ .Values.mivisu_connector_ssilm.serviceName }}
+              servicePort: {{ .Values.mivisu_connector_ssilm.port }}
+    - host: "{{ .Values.mivisu_connector_api.serviceName }}.{{ .Values.ingress.host }}"
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: {{ .Values.mivisu_connector_api.serviceName }}
+              servicePort: {{ .Values.mivisu_connector_api.port }}
+    - host: "{{ .Values.device_mgmt_module.serviceName }}.{{ .Values.ingress.host }}"
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: {{ .Values.device_mgmt_module.serviceName }}
+              servicePort: {{ .Values.device_mgmt_module.port }}
+    - host: "{{ .Values.weather_station_module.serviceName }}.{{ .Values.ingress.host }}"
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: {{ .Values.weather_station_module.serviceName }}
+              servicePort: {{ .Values.weather_station_module.port }}
+    - host: "{{ .Values.traffic_logger_module.serviceName }}.{{ .Values.ingress.host }}"
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: {{ .Values.traffic_logger_module.serviceName }}
+              servicePort: {{ .Values.traffic_logger_module.port }}
+    - host: "{{ .Values.notification_module.serviceName }}.{{ .Values.ingress.host }}"
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: {{ .Values.notification_module.serviceName }}
+              servicePort: {{ .Values.notification_module.port }}

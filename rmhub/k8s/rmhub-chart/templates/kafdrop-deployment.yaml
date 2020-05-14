@@ -1,0 +1,54 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.kafdrop.serviceName }}
+  labels:
+    app: {{ .Values.kafdrop.serviceName }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ .Values.kafdrop.serviceName }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.kafdrop.serviceName }}
+    spec:
+      containers:
+        - name: {{ .Values.kafdrop.serviceName }}
+          image: "{{ .Values.kafdrop.image }}:{{ .Values.kafdrop.tag }}"
+          env:
+          - name: ZOOKEEPER_CONNECT
+            value: "{{ .Values.zookeeper.serviceName }}:{{ .Values.zookeeper.port }}"
+          - name: ZOOKEEPER_SESSIONTIMEOUTMILLIS
+            value: "15000"
+          - name: ZOOKEEPER_CONNECTTIMEOUTMILLIS
+            value: "5000"
+          - name: ZOOKEEPER_RETRYMILLIS
+            value: "2000"
+          - name: ZOOKEEPER_MAXRETRIES
+            value: "5"
+          - name: KAFKA_BROKERCONNECT
+            value: "{{ .Values.kafka.serviceName }}:{{ .Values.kafka.port }}"
+          - name: JVM_OPTS
+            value: ""
+          - name: SERVER_SERVLET_CONTEXTPATH
+            value: "/"
+          ports:
+            - name: http
+              containerPort: 9000
+              protocol: TCP
+          livenessProbe:
+            httpGet:
+              path: "/actuator/health"
+              port: http
+            initialDelaySeconds: 180
+            periodSeconds: 30
+            timeoutSeconds: 10
+          readinessProbe:
+            httpGet:
+              path: "/actuator/health"
+              port: http
+            initialDelaySeconds: 20
+            periodSeconds: 5
+            timeoutSeconds: 10

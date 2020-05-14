@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.notification_module.serviceName }}
+  labels:
+    app: {{ .Values.notification_module.serviceName }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ .Values.notification_module.serviceName }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.notification_module.serviceName }}
+    spec:
+      containers:
+      - image: "{{ .Values.notification_module.image }}:{{ .Values.notification_module.tag }}"
+        name: {{ .Values.notification_module.serviceName }}
+        imagePullPolicy: {{ .Values.notification_module.imagePullPolicy }}
+        env:
+        - name: SPRING_KAFKA_BOOTSTRAP_SERVERS
+          value: "http://{{ .Values.kafka.serviceName }}:{{ .Values.kafka.port }}"
+        - name: SERVER_PORT
+          value: "8067"
+        - name: LOGGING_LEVEL_ORG_SPRINGFRAMEWORK
+          value: "WARN"
+        - name: LOGGING_LEVEL_RMHUB
+          value: "INFO"
+        ports:
+        - containerPort: 8067
+          name: service-port
+        volumeMounts:
+        - mountPath: /tmp
+          name: notification-module-tmp
+      imagePullSecrets:
+      - name: {{ .Values.dockerCredentialSecretPath }}
+      volumes:
+      - name: notification-module-tmp
+        emptyDir: {}

@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.device_mgmt_module.postgresql.serviceName }}
+  labels:
+    app: {{ .Values.device_mgmt_module.postgresql.serviceName }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ .Values.device_mgmt_module.postgresql.serviceName }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.device_mgmt_module.postgresql.serviceName }}
+    spec:
+      containers:
+        - image: "{{ .Values.device_mgmt_module.postgresql.image }}:{{ .Values.device_mgmt_module.postgresql.tag }}"
+          name: {{ .Values.device_mgmt_module.postgresql.serviceName }}
+          imagePullPolicy: "IfNotPresent"
+          env:
+            - name: POSTGRES_DB
+              value: {{ .Values.device_mgmt_module.postgresql.db }}
+            - name: POSTGRES_USER
+              value: {{ .Values.device_mgmt_module.postgresql.user }}
+            - name: POSTGRES_PASSWORD
+              value: {{ .Values.device_mgmt_module.postgresql.password }}
+          ports:
+            - containerPort: 5432
+              name: postgresql-port

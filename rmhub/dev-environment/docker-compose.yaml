@@ -1,0 +1,53 @@
+version: '3'
+services:
+  # ========================================================================================================================================
+  # kafka and zookeeper
+
+  zookeeper:
+    image: "wurstmeister/zookeeper"
+    container_name: "dev-zookeeper"
+    restart: always
+    ports:
+      - "8181:2181"
+    networks:
+      - dev
+
+  kafka:
+    image: "wurstmeister/kafka"
+    container_name: "dev-kafka"
+    restart: always
+    environment:
+      KAFKA_ZOOKEEPER_CONNECT: "zookeeper:2181"
+      KAFKA_LISTENERS: "INSIDE://:9092, OUTSIDE://:9999"
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: "INSIDE:PLAINTEXT,OUTSIDE:PLAINTEXT"
+      KAFKA_ADVERTISED_LISTENERS: "INSIDE://kafka:9092, OUTSIDE://${HOST_IP:-localhost}:9999" # env var set from sh script
+      KAFKA_INTER_BROKER_LISTENER_NAME: "INSIDE"
+      KAFKA_BROKER_ID: 1
+    ports:
+      - "9999:9999"
+    depends_on:
+      - zookeeper
+    networks:
+      - dev
+
+  # ========================================================================================================================================
+  # postgres DB
+
+  postgres:
+    container_name: dev-postgres
+    image: postgres:10.9
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: "rmhub"
+      POSTGRES_PASSWORD: "123456"
+      PGDATA: "/data"
+    volumes:
+      - ./docker-entrypoint-initdb.d/:/docker-entrypoint-initdb.d/
+      - /rmhub/dev-postgres:/data
+    networks:
+      - dev
+
+networks:
+  dev:

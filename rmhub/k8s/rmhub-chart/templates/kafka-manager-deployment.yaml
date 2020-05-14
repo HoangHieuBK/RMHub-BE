@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.kafka_manager.serviceName }}
+  labels:
+    app: {{ .Values.kafka_manager.serviceName }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ .Values.kafka_manager.serviceName }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.kafka_manager.serviceName }}
+    spec:
+      containers:
+      - image: "{{ .Values.kafka_manager.image }}:{{ .Values.kafka_manager.tag }}"
+        name: {{ .Values.kafka_manager.serviceName }}
+        env:
+        - name: APPLICATION_SECRET
+          value: {{ .Values.kafka_manager.secret }}
+        - name: ZK_HOSTS
+          value: "{{ .Values.zookeeper.serviceName }}:{{ .Values.zookeeper.port }}"
+        ports:
+        - containerPort: 9000
+          name: service-port
+          protocol: TCP
+      restartPolicy: Always

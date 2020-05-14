@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- this config file is a workaround in case of Spring Boot Test ignores logging.level specified in properties files -->
+<configuration>
+  <include resource="org/springframework/boot/logging/logback/base.xml"/>
+  <logger name="root" level="WARN"/>
+  <logger name="rmhub" level="INFO"/>
+</configuration>

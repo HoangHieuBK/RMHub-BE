@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.traffic_logger_module.postgresql.serviceName }}
+  labels:
+    run: {{ .Values.traffic_logger_module.postgresql.serviceName }}
+spec:
+  ports:
+  - port: {{ .Values.traffic_logger_module.postgresql.port }}
+    targetPort: postgresql-port
+    protocol: TCP
+  selector:
+    app: {{ .Values.traffic_logger_module.postgresql.serviceName }}

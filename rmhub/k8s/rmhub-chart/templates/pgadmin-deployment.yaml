@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.pgadmin.serviceName }}
+  labels:
+    app: {{ .Values.pgadmin.serviceName }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ .Values.pgadmin.serviceName }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.pgadmin.serviceName }}
+    spec:
+      containers:
+        - image: "{{ .Values.pgadmin.image }}:{{ .Values.pgadmin.tag }}"
+          name: {{ .Values.pgadmin.serviceName }}
+          imagePullPolicy: "IfNotPresent"
+          env:
+            - name: PGADMIN_DEFAULT_EMAIL
+              value: {{ .Values.pgadmin.user }}
+            - name: PGADMIN_DEFAULT_PASSWORD
+              value: {{ .Values.pgadmin.password }}
+            - name: PGADMIN_PORT
+              value: "80"
+          ports:
+            - containerPort: 80
+              name: pgadmin-port
+          volumeMounts:
+            - name: config-volume
+              mountPath: /pgadmin4/servers.json
+              subPath: servers.json
+      volumes:
+        - name: config-volume
+          configMap:
+            name: pgadmin-configmap

@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.traffic_logger_module.serviceName }}
+  labels:
+    run: {{ .Values.traffic_logger_module.serviceName }}
+spec:
+  ports:
+  - port: {{ .Values.traffic_logger_module.port }}
+    targetPort: service-port
+    protocol: TCP
+  selector:
+    app: {{ .Values.traffic_logger_module.serviceName }}

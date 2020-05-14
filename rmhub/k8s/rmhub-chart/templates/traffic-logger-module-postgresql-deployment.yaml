@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.traffic_logger_module.postgresql.serviceName }}
+  labels:
+    app: {{ .Values.traffic_logger_module.postgresql.serviceName }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ .Values.traffic_logger_module.postgresql.serviceName }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.traffic_logger_module.postgresql.serviceName }}
+    spec:
+      containers:
+        - image: "{{ .Values.traffic_logger_module.postgresql.image }}:{{ .Values.traffic_logger_module.postgresql.tag }}"
+          name: {{ .Values.traffic_logger_module.postgresql.serviceName }}
+          imagePullPolicy: "IfNotPresent"
+          env:
+            - name: POSTGRES_DB
+              value: {{ .Values.traffic_logger_module.postgresql.db }}
+            - name: POSTGRES_USER
+              value: {{ .Values.traffic_logger_module.postgresql.user }}
+            - name: POSTGRES_PASSWORD
+              value: {{ .Values.traffic_logger_module.postgresql.password }}
+          ports:
+            - containerPort: 5432
+              name: postgresql-port

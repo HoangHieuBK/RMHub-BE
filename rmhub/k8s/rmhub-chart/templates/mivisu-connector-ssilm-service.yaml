@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.mivisu_connector_ssilm.serviceName }}
+  labels:
+    run: {{ .Values.mivisu_connector_ssilm.serviceName }}
+spec:
+  ports:
+  - port: {{ .Values.mivisu_connector_ssilm.port }}
+    targetPort: service-port
+    protocol: TCP
+  selector:
+    app: {{ .Values.mivisu_connector_ssilm.serviceName }}

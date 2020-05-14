@@ -1,0 +1,14 @@
+<MIVISU>
+	<info_txt>Externe 2 Mesure.CR positionnement equipement</info_txt>
+	<CORPS>
+		<Cr_Val>1</Cr_Val>
+		<Cr_Txt_Len>54</Cr_Txt_Len>
+		<Cr_Txt>Identification acceptee abonne LABOCOM.(192.168.2.125)</Cr_Txt>
+	</CORPS>
+	<ENT>
+		<type>x</type>
+		<version>2</version>
+		<lgmes>60</lgmes>
+		<id>ABC</id>
+	</ENT>
+</MIVISU>

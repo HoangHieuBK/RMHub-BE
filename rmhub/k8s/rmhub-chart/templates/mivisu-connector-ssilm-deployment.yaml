@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.mivisu_connector_ssilm.serviceName }}
+  labels:
+    app: {{ .Values.mivisu_connector_ssilm.serviceName }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ .Values.mivisu_connector_ssilm.serviceName }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.mivisu_connector_ssilm.serviceName }}
+    spec:
+      containers:
+      - image: "{{ .Values.mivisu_connector_ssilm.image }}:{{ .Values.mivisu_connector_ssilm.tag }}"
+        name: {{ .Values.mivisu_connector_ssilm.serviceName }}
+        imagePullPolicy: {{ .Values.mivisu_connector_ssilm.imagePullPolicy }}
+        env:
+        - name: SPRING_KAFKA_BOOTSTRAP_SERVERS
+          value: "http://{{ .Values.kafka.serviceName }}:{{ .Values.kafka.port }}"
+        - name: SERVER_PORT
+          value: "8062"
+        - name: MIVISU_SOCKET_IP
+          value: {{ .Values.mivisu_connector_ssilm.mivisu_ip }}
+        - name: MIVISU_SOCKET_PORT
+          value: "{{ .Values.mivisu_connector_ssilm.mivisu_port }}"
+        - name: MIVISU_CONNECTOR_DEPLOYMENTID
+          value: "{{ .Values.mivisu_connector_ssilm.mivisu_id }}"
+        - name: LOGGING_LEVEL_ORG_SPRINGFRAMEWORK
+          value: "WARN"
+        - name: LOGGING_LEVEL_RMHUB
+          value: "INFO"
+        ports:
+        - containerPort: 8062
+          name: service-port
+        volumeMounts:
+        - mountPath: /tmp
+          name: mivisu-connector-ssilm-tmp
+      imagePullSecrets:
+      - name: {{ .Values.dockerCredentialSecretPath }}
+      volumes:
+      - name: mivisu-connector-ssilm-tmp
+        emptyDir: {}

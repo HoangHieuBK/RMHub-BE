@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<MIVISU>
+	<info_txt>Externe 2 Mesure.CR relecture mesure equipement</info_txt>
+	<CORPS>
+		<Rep_Nb_Eqt>1</Rep_Nb_Eqt>
+		<CENTRALE ID_EXT="TC_84_350">
+			<Eqt_Nb_Mesure>2</Eqt_Nb_Mesure>
+			<MESURE NUM="0">
+				<Eqt_Dt_Mes>13/06/2019 08:37:00</Eqt_Dt_Mes>
+				<Eqt_Mes_Per>60</Eqt_Mes_Per>
+				<Eqt_Mes_Lg_Id>14</Eqt_Mes_Lg_Id>
+				<Eqt_Mes_Id>1/0/QT/60/0000</Eqt_Mes_Id>
+				<Eqt_Mes_Lg_Type>9</Eqt_Mes_Lg_Type>
+				<Eqt_Mes_Type>0QT_SQ_E0</Eqt_Mes_Type>
+				<Eqt_Mes_Nb_Val>1</Eqt_Mes_Nb_Val>
+				<Eqt_Mes_Val_1>91</Eqt_Mes_Val_1>
+				<Eqt_Mes_Klif_1>&amp;#2</Eqt_Mes_Klif_1>
+			</MESURE>
+		</CENTRALE>
+		<CENTRALE ID_EXT="TC_51_000">
+      <Eqt_Nb_Mesure>1</Eqt_Nb_Mesure>
+      <MESURE NUM="0">
+        <Eqt_Dt_Mes>13/06/2019 08:36:00</Eqt_Dt_Mes>
+        <Eqt_Mes_Per>360</Eqt_Mes_Per>
+        <Eqt_Mes_Lg_Id>17</Eqt_Mes_Lg_Id>
+        <Eqt_Mes_Id>2/9/TtAM/360/T000</Eqt_Mes_Id>
+        <Eqt_Mes_Lg_Type>9</Eqt_Mes_Lg_Type>
+        <Eqt_Mes_Type>1TA_MYCE1</Eqt_Mes_Type>
+        <Eqt_Mes_Nb_Val>1</Eqt_Mes_Nb_Val>
+        <Eqt_Mes_Val_1>0</Eqt_Mes_Val_1>
+        <Eqt_Mes_Klif_1>&amp;#1</Eqt_Mes_Klif_1>
+      </MESURE>
+    </CENTRALE>
+	</CORPS>
+	<ENT>
+		<type>A</type>
+		<version>2</version>
+		<lgmes>1550</lgmes>
+		<id>ABC</id>
+	</ENT>
+</MIVISU>

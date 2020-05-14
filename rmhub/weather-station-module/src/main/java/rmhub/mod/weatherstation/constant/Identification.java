@@ -1,0 +1,24 @@
+package rmhub.mod.weatherstation.constant;
+
+public interface Identification {
+
+  String SURFACE_TEMPERATURE = "2/1/tSR/360/Am00";
+  String SURFACE_STATUS = "2/1/kSR/360/Cm00";
+  String FREEZING_TEMPERATURE = "2/1/tS1/360/Am00";
+  String WATER_FILM_HEIGHT = "2/1/HWR/360/Am00";
+  String AIR_TEMPERATURE = "2/z/tAM/360/Am00";
+  String AIR_HUMIDITY = "2/z/uAM/360/Am00";
+  String DEW_POINT_TEMPERATURE = "2/z/tA1/360/Am00";
+  String PRECIPITATION_HEIGHT = "2/z/hMR/360/Cm00";
+  String WIND_SPEED_AM = "2/z/sAR/360/Am00";
+  String WIND_SPEED_XM = "2/z/sAR/360/Xm00";
+  String TYPE_OF_PRECIPITATION = "2/z/nMR/360/Cm00";
+  String INTENSITY_OF_PRECIPITATION = "2/z/kMR/360/Cm00";
+  String WIND_DIRECTION = "2/z/dAR/360/Am00";
+  String ATMOSPHERIC_PRESSURE = "2/z/pAM/360/Am00";
+  String WINTER_CONDITIONS_WARNING = "2/9/Alr01/360/A000";
+  String WINTER_PRECIPITATIONS_WARNING = "2/9/Alr02/360/A000";
+  String COMMUNICATION = "2/~/COM/360/0000";
+  String GATE_OPEN = "2/~/GAT/360/0000";
+  String POWER_DEFAULT = "2/~/EDF/360/0000";
+}

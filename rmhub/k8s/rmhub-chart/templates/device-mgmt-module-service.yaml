@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.device_mgmt_module.serviceName }}
+  labels:
+    run: {{ .Values.device_mgmt_module.serviceName }}
+spec:
+  ports:
+  - port: {{ .Values.device_mgmt_module.port }}
+    targetPort: service-port
+    protocol: TCP
+  selector:
+    app: {{ .Values.device_mgmt_module.serviceName }}

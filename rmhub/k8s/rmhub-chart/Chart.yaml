@@ -1,0 +1,7 @@
+name: rmhub-chart
+description: Roadside Management module
+version: 0.1.0
+kubeVersion: ">=1.12.0-0"
+maintainers:
+  - name: Lillyneir
+    email: dev@lillyneir.hu

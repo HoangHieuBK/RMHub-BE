@@ -1,0 +1,1445 @@
+{
+  "INFOS": {
+    "CRVAL": "1",
+    "CRTXT": {
+      "info_get_igx": {
+        "np_mivisu_CXTMVS_MES_STA": "190828105008",
+        "arg_nom_1": "/SOURCE",
+        "arg_val_1": "mivisu",
+        "arg_nom_2": "/CONTEXTE",
+        "arg_val_2": "CXTMVS_MES_STA",
+        "InfoGeneric": [
+          {
+            "titre": "Traffic counting PR 44+400 (Calcul) (TC_44_400)",
+            "DATEINFO": {
+              "_text": "2019-04-16T18:46:35+02:00",
+              "type": "date"
+            },
+            "SOURCE": {
+              "_text": "mivisu",
+              "type": "string"
+            },
+            "CONTEXTE": {
+              "_text": "CXTMVS_MES_STA",
+              "type": "string"
+            },
+            "ID": {
+              "_text": "TC_44_400",
+              "type": "string"
+            },
+            "TITRE": {
+              "_text": "Traffic counting 44+400 Km (TC_44_400)",
+              "type": "string"
+            },
+            "TYPE": {
+              "_text": "MVS_EQT_MES",
+              "type": "string"
+            },
+            "SSTYPE": {
+              "_text": "TrafficCountingStation",
+              "type": "string"
+            },
+            "cfg": {
+              "type": {
+                "_text": "CPT"
+              },
+              "id_interne": {
+                "_text": "TC_44_400"
+              },
+              "eqt_actif": {
+                "_text": "1\\\\Actif"
+              },
+              "description": {
+                "_text": "Traffic counting 44+400 Km"
+              },
+              "profil": {
+                "_text": "TrafficCountingStation"
+              },
+              "sous_type": {
+                "_text": "SIREDO_NF99340"
+              },
+              "mesures": {
+                "_1": {
+                  "_text": "Direction_1_WE",
+                  "_0": {
+                    "_text": "Slow Lane",
+                    "QT": {
+                      "_60": {
+                        "_0000": {
+                          "id_mesure": {
+                            "_text": "1/0/QT/60/0000"
+                          },
+                          "type": {
+                            "_text": "0QT_SQ_E0"
+                          },
+                          "libelle": {
+                            "_text": "Összes gépjármuadat 1 perces"
+                          }
+                        }
+                      },
+                      "_360": {
+                        "_0000": {
+                          "id_mesure": {
+                            "_text": "1/0/QT/360/0000"
+                          },
+                          "type": {
+                            "_text": "0QT_SQ_E0"
+                          },
+                          "libelle": {
+                            "_text": "Összes gépjármuadat 6 perces"
+                          }
+                        }
+                      },
+                      "_3600": {
+                        "_0000": {
+                          "id_mesure": {
+                            "_text": "1/0/QT/3600/0000"
+                          },
+                          "type": {
+                            "_text": "0QT_SQ_E0"
+                          },
+                          "libelle": {
+                            "_text": "Összes gépjármuadat 1 hr"
+                          }
+                        }
+                      },
+                      "_86400": {
+                        "_0000": {
+                          "id_mesure": {
+                            "_text": "1/0/QT/86400/0000"
+                          },
+                          "type": {
+                            "_text": "0QT_SQ_E0"
+                          },
+                          "libelle": {
+                            "_text": "Összes gépjármuadat 1 jr"
+                          }
+                        }
+                      }
+                    },
+                    "TT": {
+                      "_60": {
+                        "_0000": {
+                          "id_mesure": {
+                            "_text": "1/0/TT/60/0000"
+                          },
+                          "type": {
+                            "_text": "0TTCMP_E0"
+                          },
+                          "libelle": {
+                            "_text": "Átlag 1 perces"
+                          }
+                        }
+                      },
+                      "_360": {
+                        "_0000": {
+                          "id_mesure": {
+                            "_text": "1/0/TT/360/0000"
+                          },
+                          "type": {
+                            "_text": "0TTCMP_E0"
+                          },
+                          "libelle": {
+                            "_text": "Átlag 6 perces"
+                          }
+                        }
+                      }
+                    },
+                    "VT": {
+                      "_60": {
+                        "_0000": {
+                          "id_mesure": {
+                            "_text": "1/0/VT/60/0000"
+                          },
+                          "type": {
+                            "_text": "0VT_MKHE0"
+                          },
+                          "libelle": {
+                            "_text": "Átlagos sebesség 1 perces"
+                          }
+                        }
+                      },
+                      "_360": {
+                        "_0000": {
+                          "id_mesure": {
+                            "_text": "1/0/VT/360/0000"
+                          },
+                          "type": {
+                            "_text": "0VT_MKHE0"
+                          },
+                          "libelle": {
+                            "_text": "Átlagos sebesség 6 perces"
+                          }
+                        }
+                      }
+                    },
+                    "BCL": {
+                      "_360": {
+                        "_0000": {
+                          "id_mesure": {
+                            "_text": "1/0/BCL/360/0000"
+                          },
+                          "type": {
+                            "_text": "0BCLIA_B0"
+                          },
+                          "libelle": {
+                            "_text": "Sensor default"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "_1": {
+                    "_text": "Fast Lane",
+                    "QT": {
+                      "_60": {
+                        "_0000": {
+                          "id_mesure": {
+                            "_text": "1/1/QT/60/0000"
+                          },
+                          "type": {
+                            "_text": "0QT_SQ_E0"
+                          },
+                          "libelle": {
+                            "_text": "Összes gépjármuadat 1 perces"
+                          }
+                        }
+                      },
+                      "_360": {
+                        "_0000": {
+                          "id_mesure": {
+                            "_text": "1/1/QT/360/0000"
+                          },
+                          "type": {
+                            "_text": "0QT_SQ_E0"
+                          },
+                          "libelle": {
+                            "_text": "Összes gépjármuadat 6 perces"
+                          }
+                        }
+                      },
+                      "_3600": {
+                        "_0000": {
+                          "id_mesure": {
+                            "_text": "1/1/QT/3600/0000"
+                          },
+                          "type": {
+                            "_text": "0QT_SQ_E0"
+                          },
+                          "libelle": {
+                            "_text": "Összes gépjármuadat 1 hr"
+                          }
+                        }
+                      },
+                      "_86400": {
+                        "_0000": {
+                          "id_mesure": {
+                            "_text": "1/1/QT/86400/0000"
+                          },
+                          "type": {
+                            "_text": "0QT_SQ_E0"
+                          },
+                          "libelle": {
+                            "_text": "Összes gépjármuadat 1 jr"
+                          }
+                        }
+                      }
+                    },
+                    "TT": {
+                      "_60": {
+                        "_0000": {
+                          "id_mesure": {
+                            "_text": "1/1/TT/60/0000"
+                          },
+                          "type": {
+                            "_text": "0TTCMP_E0"
+                          },
+                          "libelle": {
+                            "_text": "Átlag 1 perces"
+                          }
+                        }
+                      },
+                      "_360": {
+                        "_0000": {
+                          "id_mesure": {
+                            "_text": "1/1/TT/360/0000"
+                          },
+                          "type": {
+                            "_text": "0TTCMP_E0"
+                          },
+                          "libelle": {
+                            "_text": "Átlag 6 perces"
+                          }
+                        }
+                      }
+                    },
+                    "VT": {
+                      "_60": {
+                        "_0000": {
+                          "id_mesure": {
+                            "_text": "1/1/VT/60/0000"
+                          },
+                          "type": {
+                            "_text": "0VT_MKHE0"
+                          },
+                          "libelle": {
+                            "_text": "Átlagos sebesség 1 perces"
+                          }
+                        }
+                      },
+                      "_360": {
+                        "_0000": {
+                          "id_mesure": {
+                            "_text": "1/1/VT/360/0000"
+                          },
+                          "type": {
+                            "_text": "0VT_MKHE0"
+                          },
+                          "libelle": {
+                            "_text": "Átlagos sebesség 6 perces"
+                          }
+                        }
+                      }
+                    },
+                    "BCL": {
+                      "_360": {
+                        "_0000": {
+                          "id_mesure": {
+                            "_text": "1/1/BCL/360/0000"
+                          },
+                          "type": {
+                            "_text": "0BCLIA_B0"
+                          },
+                          "libelle": {
+                            "_text": "Sensor default"
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "_2": {
+                  "_text": "Direction_2_EW",
+                  "_2": {
+                    "_text": "Fast Lane",
+                    "QT": {
+                      "_60": {
+                        "_0000": {
+                          "id_mesure": {
+                            "_text": "2/2/QT/60/0000"
+                          },
+                          "type": {
+                            "_text": "0QT_SQ_E0"
+                          },
+                          "libelle": {
+                            "_text": "Összes gépjármuadat 1 perces"
+                          }
+                        }
+                      },
+                      "_360": {
+                        "_0000": {
+                          "id_mesure": {
+                            "_text": "2/2/QT/360/0000"
+                          },
+                          "type": {
+                            "_text": "0QT_SQ_E0"
+                          },
+                          "libelle": {
+                            "_text": "Összes gépjármuadat 6 perces"
+                          }
+                        }
+                      },
+                      "_3600": {
+                        "_0000": {
+                          "id_mesure": {
+                            "_text": "2/2/QT/3600/0000"
+                          },
+                          "type": {
+                            "_text": "0QT_SQ_E0"
+                          },
+                          "libelle": {
+                            "_text": "Összes gépjármuadat 1 hr"
+                          }
+                        }
+                      },
+                      "_86400": {
+                        "_0000": {
+                          "id_mesure": {
+                            "_text": "2/2/QT/86400/0000"
+                          },
+                          "type": {
+                            "_text": "0QT_SQ_E0"
+                          },
+                          "libelle": {
+                            "_text": "Összes gépjármuadat 1 jr"
+                          }
+                        }
+                      }
+                    },
+                    "TT": {
+                      "_60": {
+                        "_0000": {
+                          "id_mesure": {
+                            "_text": "2/2/TT/60/0000"
+                          },
+                          "type": {
+                            "_text": "0TTCMP_E0"
+                          },
+                          "libelle": {
+                            "_text": "Átlag 1 perces"
+                          }
+                        }
+                      },
+                      "_360": {
+                        "_0000": {
+                          "id_mesure": {
+                            "_text": "2/2/TT/360/0000"
+                          },
+                          "type": {
+                            "_text": "0TTCMP_E0"
+                          },
+                          "libelle": {
+                            "_text": "Átlag 6 perces"
+                          }
+                        }
+                      }
+                    },
+                    "VT": {
+                      "_60": {
+                        "_0000": {
+                          "id_mesure": {
+                            "_text": "2/2/VT/60/0000"
+                          },
+                          "type": {
+                            "_text": "0VT_MKHE0"
+                          },
+                          "libelle": {
+                            "_text": "Átlagos sebesség 1 perces"
+                          }
+                        }
+                      },
+                      "_360": {
+                        "_0000": {
+                          "id_mesure": {
+                            "_text": "2/2/VT/360/0000"
+                          },
+                          "type": {
+                            "_text": "0VT_MKHE0"
+                          },
+                          "libelle": {
+                            "_text": "Átlagos sebesség 6 perces"
+                          }
+                        }
+                      }
+                    },
+                    "BCL": {
+                      "_360": {
+                        "_0000": {
+                          "id_mesure": {
+                            "_text": "2/2/BCL/360/0000"
+                          },
+                          "type": {
+                            "_text": "0BCLIA_B0"
+                          },
+                          "libelle": {
+                            "_text": "Sensor default"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "_3": {
+                    "_text": "Slow Lane",
+                    "QT": {
+                      "_60": {
+                        "_0000": {
+                          "id_mesure": {
+                            "_text": "2/3/QT/60/0000"
+                          },
+                          "type": {
+                            "_text": "0QT_SQ_E0"
+                          },
+                          "libelle": {
+                            "_text": "Összes gépjármuadat 1 perces"
+                          }
+                        }
+                      },
+                      "_360": {
+                        "_0000": {
+                          "id_mesure": {
+                            "_text": "2/3/QT/360/0000"
+                          },
+                          "type": {
+                            "_text": "0QT_SQ_E0"
+                          },
+                          "libelle": {
+                            "_text": "Összes gépjármuadat 6 perces"
+                          }
+                        }
+                      },
+                      "_3600": {
+                        "_0000": {
+                          "id_mesure": {
+                            "_text": "2/3/QT/3600/0000"
+                          },
+                          "type": {
+                            "_text": "0QT_SQ_E0"
+                          },
+                          "libelle": {
+                            "_text": "Összes gépjármuadat 1 hr"
+                          }
+                        }
+                      },
+                      "_86400": {
+                        "_0000": {
+                          "id_mesure": {
+                            "_text": "2/3/QT/86400/0000"
+                          },
+                          "type": {
+                            "_text": "0QT_SQ_E0"
+                          },
+                          "libelle": {
+                            "_text": "Összes gépjármuadat 1 jr"
+                          }
+                        }
+                      }
+                    },
+                    "TT": {
+                      "_60": {
+                        "_0000": {
+                          "id_mesure": {
+                            "_text": "2/3/TT/60/0000"
+                          },
+                          "type": {
+                            "_text": "0TTCMP_E0"
+                          },
+                          "libelle": {
+                            "_text": "Átlag 1 perces"
+                          }
+                        }
+                      },
+                      "_360": {
+                        "_0000": {
+                          "id_mesure": {
+                            "_text": "2/3/TT/360/0000"
+                          },
+                          "type": {
+                            "_text": "0TTCMP_E0"
+                          },
+                          "libelle": {
+                            "_text": "Átlag 6 perces"
+                          }
+                        }
+                      }
+                    },
+                    "VT": {
+                      "_60": {
+                        "_0000": {
+                          "id_mesure": {
+                            "_text": "2/3/VT/60/0000"
+                          },
+                          "type": {
+                            "_text": "0VT_MKHE0"
+                          },
+                          "libelle": {
+                            "_text": "Átlagos sebesség 1 perces"
+                          }
+                        }
+                      },
+                      "_360": {
+                        "_0000": {
+                          "id_mesure": {
+                            "_text": "2/3/VT/360/0000"
+                          },
+                          "type": {
+                            "_text": "0VT_MKHE0"
+                          },
+                          "libelle": {
+                            "_text": "Átlagos sebesség 6 perces"
+                          }
+                        }
+                      }
+                    },
+                    "BCL": {
+                      "_360": {
+                        "_0000": {
+                          "id_mesure": {
+                            "_text": "2/3/BCL/360/0000"
+                          },
+                          "type": {
+                            "_text": "0BCLIA_B0"
+                          },
+                          "libelle": {
+                            "_text": "Sensor default"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "projections": {
+                "synoptique": [
+                  {
+                    "_text": "M44.png",
+                    "projection": [
+                      {
+                        "_text": "TC_44_400/2/*/*/*/0000",
+                        "mesures": {
+                          "eqt": {
+                            "_text": "TC_44_400",
+                            "mes": [
+                              {
+                                "_text": "2/2/QT/60/0000"
+                              },
+                              {
+                                "_text": "2/2/QT/360/0000"
+                              },
+                              {
+                                "_text": "2/2/QT/3600/0000"
+                              },
+                              {
+                                "_text": "2/2/QT/86400/0000"
+                              },
+                              {
+                                "_text": "2/2/TT/60/0000"
+                              },
+                              {
+                                "_text": "2/2/TT/360/0000"
+                              },
+                              {
+                                "_text": "2/2/VT/60/0000"
+                              },
+                              {
+                                "_text": "2/2/VT/360/0000"
+                              },
+                              {
+                                "_text": "2/2/BCL/360/0000"
+                              },
+                              {
+                                "_text": "2/3/QT/60/0000"
+                              },
+                              {
+                                "_text": "2/3/QT/360/0000"
+                              },
+                              {
+                                "_text": "2/3/QT/3600/0000"
+                              },
+                              {
+                                "_text": "2/3/QT/86400/0000"
+                              },
+                              {
+                                "_text": "2/3/TT/60/0000"
+                              },
+                              {
+                                "_text": "2/3/TT/360/0000"
+                              },
+                              {
+                                "_text": "2/3/VT/60/0000"
+                              },
+                              {
+                                "_text": "2/3/VT/360/0000"
+                              },
+                              {
+                                "_text": "2/3/BCL/360/0000"
+                              },
+                              {
+                                "_text": "2/*/QT/60/0000"
+                              },
+                              {
+                                "_text": "2/*/QT/360/0000"
+                              },
+                              {
+                                "_text": "2/*/QT/3600/0000"
+                              },
+                              {
+                                "_text": "2/*/QT/86400/0000"
+                              },
+                              {
+                                "_text": "2/*/TT/60/0000"
+                              },
+                              {
+                                "_text": "2/*/TT/360/0000"
+                              },
+                              {
+                                "_text": "2/*/VT/60/0000"
+                              },
+                              {
+                                "_text": "2/*/VT/360/0000"
+                              }
+                            ]
+                          }
+                        },
+                        "libelle": {
+                          "_text": "44+400 Km East West"
+                        },
+                        "type": {
+                          "_text": "L"
+                        },
+                        "raster": {
+                          "_text": "434;150;435;149;439;149;440;148;444;148;445;147;449;147;450;146;454;146;455;145;458;145;459;144;463;144;464;143;468;143;469;142;473;142;474;141;477;141;478;140;482;140;483;139;487;139;488;138;491;138;492;137;495;137;496;136;500;136;501;135;504;135;505;134;509;134;510;133;513;133;514;132;518;132;519;131;523;131;524;130;528;130;529;129;533;129;534;128;539;128;540;127;544;127;545;126;550;126;550;128;551;129;551;130;550;130;549;131;544;131;543;132;539;132;538;133;533;133;532;134;528;134;527;135;523;135;522;136;518;136;517;137;514;137;513;138;509;138;508;139;504;139;503;140;500;140;499;141;496;141;495;142;491;142;490;143;487;143;486;144;482;144;481;145;478;145;477;146;473;146;472;147;468;147;467;148;463;148;462;149;459;149;458;150;454;150;453;151;449;151;448;152;444;152;443;153;439;153;438;154;435;154;435;153;434;152;"
+                        },
+                        "abscisses": {
+                          "axe": {},
+                          "debut": {
+                            "abscisse": {
+                              "_text": "0"
+                            },
+                            "libelle": {}
+                          },
+                          "fin": {
+                            "abscisse": {
+                              "_text": "0"
+                            },
+                            "libelle": {}
+                          }
+                        },
+                        "alertc": {
+                          "version": {},
+                          "debut": {
+                            "point": {
+                              "_text": "0"
+                            },
+                            "distance": {
+                              "_text": "0"
+                            },
+                            "sens": {
+                              "_text": "C"
+                            }
+                          },
+                          "fin": {
+                            "point": {
+                              "_text": "0"
+                            },
+                            "distance": {
+                              "_text": "0"
+                            },
+                            "sens": {
+                              "_text": "C"
+                            }
+                          }
+                        },
+                        "gps": {
+                          "debut": {
+                            "latitude": {
+                              "_text": "0"
+                            },
+                            "longitude": {
+                              "_text": "0"
+                            },
+                            "altitude": {
+                              "_text": "0"
+                            }
+                          },
+                          "fin": {
+                            "latitude": {
+                              "_text": "0"
+                            },
+                            "longitude": {
+                              "_text": "0"
+                            },
+                            "altitude": {
+                              "_text": "0"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "_text": "TC_44_400/1/*/*/*/0000",
+                        "mesures": {
+                          "eqt": {
+                            "_text": "TC_44_400",
+                            "mes": [
+                              {
+                                "_text": "1/0/QT/60/0000"
+                              },
+                              {
+                                "_text": "1/0/QT/360/0000"
+                              },
+                              {
+                                "_text": "1/0/QT/3600/0000"
+                              },
+                              {
+                                "_text": "1/0/QT/86400/0000"
+                              },
+                              {
+                                "_text": "1/0/TT/60/0000"
+                              },
+                              {
+                                "_text": "1/0/TT/360/0000"
+                              },
+                              {
+                                "_text": "1/0/VT/60/0000"
+                              },
+                              {
+                                "_text": "1/0/VT/360/0000"
+                              },
+                              {
+                                "_text": "1/0/BCL/360/0000"
+                              },
+                              {
+                                "_text": "1/1/QT/60/0000"
+                              },
+                              {
+                                "_text": "1/1/QT/360/0000"
+                              },
+                              {
+                                "_text": "1/1/QT/3600/0000"
+                              },
+                              {
+                                "_text": "1/1/QT/86400/0000"
+                              },
+                              {
+                                "_text": "1/1/TT/60/0000"
+                              },
+                              {
+                                "_text": "1/1/TT/360/0000"
+                              },
+                              {
+                                "_text": "1/1/VT/60/0000"
+                              },
+                              {
+                                "_text": "1/1/VT/360/0000"
+                              },
+                              {
+                                "_text": "1/1/BCL/360/0000"
+                              },
+                              {
+                                "_text": "1/*/QT/60/0000"
+                              },
+                              {
+                                "_text": "1/*/QT/360/0000"
+                              },
+                              {
+                                "_text": "1/*/QT/3600/0000"
+                              },
+                              {
+                                "_text": "1/*/QT/86400/0000"
+                              },
+                              {
+                                "_text": "1/*/TT/60/0000"
+                              },
+                              {
+                                "_text": "1/*/TT/360/0000"
+                              },
+                              {
+                                "_text": "1/*/VT/60/0000"
+                              },
+                              {
+                                "_text": "1/*/VT/360/0000"
+                              }
+                            ]
+                          }
+                        },
+                        "libelle": {
+                          "_text": "44+400 Km West East"
+                        },
+                        "type": {
+                          "_text": "L"
+                        },
+                        "raster": {
+                          "_text": "436;158;438;158;439;157;442;157;443;156;447;156;448;155;452;155;453;154;457;154;458;153;462;153;463;152;467;152;468;151;472;151;473;150;476;150;477;149;481;149;482;148;485;148;486;147;490;147;491;146;494;146;495;145;499;145;500;144;503;144;504;143;508;143;509;142;512;142;513;141;517;141;518;140;522;140;523;139;527;139;528;138;532;138;533;137;537;137;538;136;542;136;543;135;548;135;549;134;552;134;553;135;553;139;548;139;547;140;542;140;541;141;537;141;536;142;532;142;531;143;527;143;526;144;522;144;521;145;517;145;516;146;512;146;511;147;508;147;507;148;503;148;502;149;499;149;498;150;495;150;494;151;490;151;489;152;486;152;485;153;481;153;480;154;476;154;475;155;472;155;471;156;467;156;466;157;462;157;461;158;457;158;456;159;452;159;451;160;447;160;446;161;443;161;442;162;438;162;437;163;437;161;436;160;"
+                        },
+                        "abscisses": {
+                          "axe": {},
+                          "debut": {
+                            "abscisse": {
+                              "_text": "0"
+                            },
+                            "libelle": {}
+                          },
+                          "fin": {
+                            "abscisse": {
+                              "_text": "0"
+                            },
+                            "libelle": {}
+                          }
+                        },
+                        "alertc": {
+                          "version": {},
+                          "debut": {
+                            "point": {
+                              "_text": "0"
+                            },
+                            "distance": {
+                              "_text": "0"
+                            },
+                            "sens": {
+                              "_text": "C"
+                            }
+                          },
+                          "fin": {
+                            "point": {
+                              "_text": "0"
+                            },
+                            "distance": {
+                              "_text": "0"
+                            },
+                            "sens": {
+                              "_text": "C"
+                            }
+                          }
+                        },
+                        "gps": {
+                          "debut": {
+                            "latitude": {
+                              "_text": "0"
+                            },
+                            "longitude": {
+                              "_text": "0"
+                            },
+                            "altitude": {
+                              "_text": "0"
+                            }
+                          },
+                          "fin": {
+                            "latitude": {
+                              "_text": "0"
+                            },
+                            "longitude": {
+                              "_text": "0"
+                            },
+                            "altitude": {
+                              "_text": "0"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "_text": "M44_traffic.png",
+                    "projection": [
+                      {
+                        "_text": "TC_44_400/2/*/*/*/0000",
+                        "mesures": {
+                          "eqt": {
+                            "_text": "TC_44_400",
+                            "mes": [
+                              {
+                                "_text": "2/2/QT/60/0000"
+                              },
+                              {
+                                "_text": "2/2/QT/360/0000"
+                              },
+                              {
+                                "_text": "2/2/QT/3600/0000"
+                              },
+                              {
+                                "_text": "2/2/QT/86400/0000"
+                              },
+                              {
+                                "_text": "2/2/TT/60/0000"
+                              },
+                              {
+                                "_text": "2/2/TT/360/0000"
+                              },
+                              {
+                                "_text": "2/2/VT/60/0000"
+                              },
+                              {
+                                "_text": "2/2/VT/360/0000"
+                              },
+                              {
+                                "_text": "2/2/BCL/360/0000"
+                              },
+                              {
+                                "_text": "2/3/QT/60/0000"
+                              },
+                              {
+                                "_text": "2/3/QT/360/0000"
+                              },
+                              {
+                                "_text": "2/3/QT/3600/0000"
+                              },
+                              {
+                                "_text": "2/3/QT/86400/0000"
+                              },
+                              {
+                                "_text": "2/3/TT/60/0000"
+                              },
+                              {
+                                "_text": "2/3/TT/360/0000"
+                              },
+                              {
+                                "_text": "2/3/VT/60/0000"
+                              },
+                              {
+                                "_text": "2/3/VT/360/0000"
+                              },
+                              {
+                                "_text": "2/3/BCL/360/0000"
+                              },
+                              {
+                                "_text": "2/*/QT/60/0000"
+                              },
+                              {
+                                "_text": "2/*/QT/360/0000"
+                              },
+                              {
+                                "_text": "2/*/QT/3600/0000"
+                              },
+                              {
+                                "_text": "2/*/QT/86400/0000"
+                              },
+                              {
+                                "_text": "2/*/TT/60/0000"
+                              },
+                              {
+                                "_text": "2/*/TT/360/0000"
+                              },
+                              {
+                                "_text": "2/*/VT/60/0000"
+                              },
+                              {
+                                "_text": "2/*/VT/360/0000"
+                              }
+                            ]
+                          }
+                        },
+                        "libelle": {
+                          "_text": "44+400 Km iràny 2"
+                        },
+                        "type": {
+                          "_text": "L"
+                        },
+                        "raster": {
+                          "_text": "434;150;435;149;439;149;440;148;444;148;445;147;449;147;450;146;454;146;455;145;458;145;459;144;463;144;464;143;468;143;469;142;473;142;474;141;477;141;478;140;482;140;483;139;487;139;488;138;491;138;492;137;495;137;496;136;500;136;501;135;504;135;505;134;509;134;510;133;513;133;514;132;518;132;519;131;523;131;524;130;528;130;529;129;533;129;534;128;539;128;540;127;544;127;545;126;550;126;550;128;551;129;551;130;550;130;549;131;544;131;543;132;539;132;538;133;533;133;532;134;528;134;527;135;523;135;522;136;518;136;517;137;514;137;513;138;509;138;508;139;504;139;503;140;500;140;499;141;496;141;495;142;491;142;490;143;487;143;486;144;482;144;481;145;478;145;477;146;473;146;472;147;468;147;467;148;463;148;462;149;459;149;458;150;454;150;453;151;449;151;448;152;444;152;443;153;439;153;438;154;435;154;435;153;434;152;"
+                        },
+                        "abscisses": {
+                          "axe": {},
+                          "debut": {
+                            "abscisse": {
+                              "_text": "0"
+                            },
+                            "libelle": {}
+                          },
+                          "fin": {
+                            "abscisse": {
+                              "_text": "0"
+                            },
+                            "libelle": {}
+                          }
+                        },
+                        "alertc": {
+                          "version": {},
+                          "debut": {
+                            "point": {
+                              "_text": "0"
+                            },
+                            "distance": {
+                              "_text": "0"
+                            },
+                            "sens": {
+                              "_text": "C"
+                            }
+                          },
+                          "fin": {
+                            "point": {
+                              "_text": "0"
+                            },
+                            "distance": {
+                              "_text": "0"
+                            },
+                            "sens": {
+                              "_text": "C"
+                            }
+                          }
+                        },
+                        "gps": {
+                          "debut": {
+                            "latitude": {
+                              "_text": "0"
+                            },
+                            "longitude": {
+                              "_text": "0"
+                            },
+                            "altitude": {
+                              "_text": "0"
+                            }
+                          },
+                          "fin": {
+                            "latitude": {
+                              "_text": "0"
+                            },
+                            "longitude": {
+                              "_text": "0"
+                            },
+                            "altitude": {
+                              "_text": "0"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "_text": "TC_44_400/1/*/*/*/0000",
+                        "mesures": {
+                          "eqt": {
+                            "_text": "TC_44_400",
+                            "mes": [
+                              {
+                                "_text": "1/0/QT/60/0000"
+                              },
+                              {
+                                "_text": "1/0/QT/360/0000"
+                              },
+                              {
+                                "_text": "1/0/QT/3600/0000"
+                              },
+                              {
+                                "_text": "1/0/QT/86400/0000"
+                              },
+                              {
+                                "_text": "1/0/TT/60/0000"
+                              },
+                              {
+                                "_text": "1/0/TT/360/0000"
+                              },
+                              {
+                                "_text": "1/0/VT/60/0000"
+                              },
+                              {
+                                "_text": "1/0/VT/360/0000"
+                              },
+                              {
+                                "_text": "1/0/BCL/360/0000"
+                              },
+                              {
+                                "_text": "1/1/QT/60/0000"
+                              },
+                              {
+                                "_text": "1/1/QT/360/0000"
+                              },
+                              {
+                                "_text": "1/1/QT/3600/0000"
+                              },
+                              {
+                                "_text": "1/1/QT/86400/0000"
+                              },
+                              {
+                                "_text": "1/1/TT/60/0000"
+                              },
+                              {
+                                "_text": "1/1/TT/360/0000"
+                              },
+                              {
+                                "_text": "1/1/VT/60/0000"
+                              },
+                              {
+                                "_text": "1/1/VT/360/0000"
+                              },
+                              {
+                                "_text": "1/1/BCL/360/0000"
+                              },
+                              {
+                                "_text": "1/*/QT/60/0000"
+                              },
+                              {
+                                "_text": "1/*/QT/360/0000"
+                              },
+                              {
+                                "_text": "1/*/QT/3600/0000"
+                              },
+                              {
+                                "_text": "1/*/QT/86400/0000"
+                              },
+                              {
+                                "_text": "1/*/TT/60/0000"
+                              },
+                              {
+                                "_text": "1/*/TT/360/0000"
+                              },
+                              {
+                                "_text": "1/*/VT/60/0000"
+                              },
+                              {
+                                "_text": "1/*/VT/360/0000"
+                              }
+                            ]
+                          }
+                        },
+                        "libelle": {
+                          "_text": "44+400 Km irány 1"
+                        },
+                        "type": {
+                          "_text": "L"
+                        },
+                        "raster": {
+                          "_text": "436;158;438;158;439;157;442;157;443;156;447;156;448;155;452;155;453;154;457;154;458;153;462;153;463;152;467;152;468;151;472;151;473;150;476;150;477;149;481;149;482;148;485;148;486;147;490;147;491;146;494;146;495;145;499;145;500;144;503;144;504;143;508;143;509;142;512;142;513;141;517;141;518;140;522;140;523;139;527;139;528;138;532;138;533;137;537;137;538;136;542;136;543;135;548;135;549;134;552;134;553;135;553;139;548;139;547;140;542;140;541;141;537;141;536;142;532;142;531;143;527;143;526;144;522;144;521;145;517;145;516;146;512;146;511;147;508;147;507;148;503;148;502;149;499;149;498;150;495;150;494;151;490;151;489;152;486;152;485;153;481;153;480;154;476;154;475;155;472;155;471;156;467;156;466;157;462;157;461;158;457;158;456;159;452;159;451;160;447;160;446;161;443;161;442;162;438;162;437;163;437;161;436;160;"
+                        },
+                        "abscisses": {
+                          "axe": {},
+                          "debut": {
+                            "abscisse": {
+                              "_text": "0"
+                            },
+                            "libelle": {}
+                          },
+                          "fin": {
+                            "abscisse": {
+                              "_text": "0"
+                            },
+                            "libelle": {}
+                          }
+                        },
+                        "alertc": {
+                          "version": {},
+                          "debut": {
+                            "point": {
+                              "_text": "0"
+                            },
+                            "distance": {
+                              "_text": "0"
+                            },
+                            "sens": {
+                              "_text": "C"
+                            }
+                          },
+                          "fin": {
+                            "point": {
+                              "_text": "0"
+                            },
+                            "distance": {
+                              "_text": "0"
+                            },
+                            "sens": {
+                              "_text": "C"
+                            }
+                          }
+                        },
+                        "gps": {
+                          "debut": {
+                            "latitude": {
+                              "_text": "0"
+                            },
+                            "longitude": {
+                              "_text": "0"
+                            },
+                            "altitude": {
+                              "_text": "0"
+                            }
+                          },
+                          "fin": {
+                            "latitude": {
+                              "_text": "0"
+                            },
+                            "longitude": {
+                              "_text": "0"
+                            },
+                            "altitude": {
+                              "_text": "0"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "specifiques": {
+                "specifique": [
+                  {
+                    "nom": {
+                      "_text": "/centrale[@variable]"
+                    },
+                    "valeur": {
+                      "_text": "60"
+                    }
+                  },
+                  {
+                    "nom": {
+                      "_text": "Configuration check enabled"
+                    },
+                    "valeur": {
+                      "_text": "Non"
+                    }
+                  },
+                  {
+                    "nom": {
+                      "_text": "/centrale/specifique/siredo/eqt_calcul_vir_pool"
+                    },
+                    "valeur": {
+                      "_text": "Non"
+                    }
+                  },
+                  {
+                    "nom": {
+                      "_text": "Child station"
+                    },
+                    "valeur": {
+                      "_text": "Non"
+                    }
+                  },
+                  {
+                    "nom": {
+                      "_text": "Child station"
+                    },
+                    "valeur": {
+                      "_text": "Non"
+                    }
+                  },
+                  {
+                    "nom": {
+                      "_text": "Speed limit, at the station"
+                    },
+                    "valeur": {
+                      "_text": "0"
+                    }
+                  },
+                  {
+                    "nom": {
+                      "_text": "Road"
+                    },
+                    "valeur": {
+                      "_text": "M44"
+                    }
+                  },
+                  {
+                    "nom": {
+                      "_text": "Road marker"
+                    },
+                    "valeur": {
+                      "_text": "PR 44.400"
+                    }
+                  },
+                  {
+                    "nom": {
+                      "_text": "Operator identifier"
+                    },
+                    "valeur": {
+                      "_text": "Lillyneir"
+                    }
+                  },
+                  {
+                    "nom": {
+                      "_text": "/centrale/specifique/alr_lcr/pilote/port"
+                    },
+                    "valeur": {
+                      "_text": "7556"
+                    }
+                  },
+                  {
+                    "nom": {
+                      "_text": "/centrale/canaux/canal[1][@cfv]"
+                    },
+                    "valeur": {
+                      "_text": "0=0/2"
+                    }
+                  },
+                  {
+                    "nom": {
+                      "_text": "/centrale/canaux/canal[2][@cfv]"
+                    },
+                    "valeur": {
+                      "_text": "1=4/6"
+                    }
+                  },
+                  {
+                    "nom": {
+                      "_text": "/centrale/canaux/canal[3][@cfv]"
+                    },
+                    "valeur": {
+                      "_text": "1=4/6"
+                    }
+                  },
+                  {
+                    "nom": {
+                      "_text": "/centrale/canaux/canal[4][@cfv]"
+                    },
+                    "valeur": {
+                      "_text": "1=4/6"
+                    }
+                  }
+                ]
+              }
+            },
+            "M44": {
+              "type": "posraster",
+              "posraster": {
+                "id": "1",
+                "affpopup": "1",
+                "posrasterelement": {
+                  "id": "1",
+                  "polygone": {
+                    "_text": "479,160"
+                  },
+                  "polyordre": {
+                    "type": ""
+                  },
+                  "color": {},
+                  "affpoly": {
+                    "_text": "0"
+                  },
+                  "afficone": {
+                    "_text": "1"
+                  },
+                  "afftexte": {},
+                  "fontsize": {},
+                  "fontname": {},
+                  "fillpoly": {
+                    "_text": "0"
+                  },
+                  "icone": {
+                    "_text": "eqt_mes_32.gif"
+                  },
+                  "action": {
+                    "type": "get_info"
+                  }
+                }
+              }
+            },
+            "M44_traffic": {
+              "type": "posraster",
+              "posraster": {
+                "id": "1",
+                "affpopup": "1",
+                "posrasterelement": {
+                  "id": "1",
+                  "polygone": {
+                    "_text": "479,160"
+                  },
+                  "polyordre": {
+                    "type": ""
+                  },
+                  "color": {},
+                  "affpoly": {
+                    "_text": "0"
+                  },
+                  "afficone": {
+                    "_text": "1"
+                  },
+                  "afftexte": {},
+                  "fontsize": {},
+                  "fontname": {},
+                  "fillpoly": {
+                    "_text": "0"
+                  },
+                  "icone": {
+                    "_text": "eqt_mes_32.gif"
+                  },
+                  "action": {
+                    "type": "get_info"
+                  }
+                }
+              }
+            },
+            "ICONE": {
+              "_text": "eqt_mes_32.gif",
+              "type": "image"
+            },
+            "DATEUPDATE": {
+              "_text": "2019-08-28T10:50:07+02:00",
+              "type": "date"
+            },
+            "DATEFIN": {
+              "type": "date"
+            },
+            "NON_ID": {
+              "type": "date"
+            }
+          }
+        ]
+      }
+    }
+  }
+}
